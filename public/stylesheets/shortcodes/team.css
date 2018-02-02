@@ -1,0 +1,89 @@
+/*
+Template:  Webster - Responsive Multi-purpose HTML5 Template
+Author: potenzaglobalsolutions.com
+Design and Developed by: potenzaglobalsolutions.com
+
+NOTE: This file contains Team CSS.
+*/
+
+/*************************
+        team
+*************************/
+.team { text-align: center; overflow: hidden; }
+.team .team-description { padding: 20px 20px 10px; }
+.team .team-info h5 { text-transform: uppercase; line-height: 24px; }
+.team .team-info span { font-size: 14px; text-transform: uppercase;}
+.team .social-icons { text-align: center; display: inline-block; margin-top: 10px; } 
+.team .team-contact span { display: block; font-size: 14px; display: block; margin-bottom: 10px; }
+.team .team-contact span.call { font-size: 20px; line-height: 28px; font-weight: 600; margin: 10px 0; color: #84ba3f; }
+.team .team-contact span i { padding-right: 5px; }
+
+/*team-hover*/
+.team.team-hover .social-icons { position: absolute; top: 0; left: 10px; opacity: 0; transition: 0.5s ease-in-out; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; -ms-transition: 0.5s ease-in-out; }
+.team.team-hover .social-icons ul { display: block; }
+.team.team-hover .social-icons li { display: block; float: none; clear: both; }
+.team.team-hover .social-icons li a { margin: 3px 0; border-radius: 50%; }
+.team.team-hover:hover .social-icons { opacity: 1; left: 40px; }
+
+/*team-hover*/
+.team.team-hover-2 .social-icons { position: absolute; top: 0%; right: 0; left:0px; opacity: 0; transition: 0.5s ease-in-out; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; -ms-transition: 0.5s ease-in-out; }
+.team.team-hover-2 .social-icons ul { display: block; text-align: center; margin: 0 auto; }
+.team.team-hover-2 .social-icons li { display: inline-block; float: none; clear: both; }
+.team.team-hover-2 .social-icons li a { margin: 3px 0; background: #fff; color: #323232;}
+.team.team-hover-2 .social-icons li a:hover { color: #fff;}
+.team.team-hover-2:hover .social-icons { opacity: 1; top: 10%; }
+.team.team-hover-2 .team-photo{ position: relative; }
+.team.team-hover-2 .team-photo::before { content: ""; position: absolute; height: 100%; top: 0; left: 0; width: 100%; right: 0; bottom: 0; -webkit-transition: all 0.7s cubic-bezier(.68,.11,.13,.98); -moz-transition: all 0.7s cubic-bezier(.68,.11,.13,.98); transition: all 0.6s cubic-bezier(.68,.11,.13,.98)
+ }
+.team.team-hover-2:hover .team-photo::before { background:rgba(132,186,63, 0.9); }
+
+/*team border*/
+.team-border .team-description { border:1px solid #eeeeee; }
+
+/*team bg*/
+.team-bg .team-description { background: #f6f7f8; }
+
+/*team bg*/
+.team-dark .team-description { background: #323232; }
+.team-dark .team-info h5, .team-dark .team-contact span, .team-dark .team-info span, .team-dark .social-icons li a { color: #fff; }
+
+/*team shadow*/
+.team-shadow { box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); }
+
+/*team round*/
+.team-round .team-photo img { border-radius: 50%; }
+
+/*team round*/
+.team-round-shadow .team-photo img { border-radius: 50%; width: 90%; border: 3px solid #fff; box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.10); margin-top: 15px; }
+
+/*team round small*/
+.team-round-small .team-photo img { border-radius: 50%; width: 50%; }
+
+/*team round small shadow*/
+.team-round-small-shadow .team-photo img { border-radius: 50%; border: 3px solid #fff; width: 50%; box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.10); margin-top: 15px;}
+
+/*team full border*/
+.team-round.full-border { padding: 10px; border:1px solid #eeeeee; }
+.team-round.full-border .team-contact span.call { font-size: 16px; line-height: 22px; font-weight: normal; color: #363636; }
+.team-round.full-border .team-contact span.email { font-size: 17px; color: #84ba3f; }
+.team-round.full-border .team-description { padding-bottom: 0; }
+
+/*team list*/
+.team.team-list { clear: both; }
+.team.team-list h5 { font-size: 26px; }
+.team.team-list .team-info span { font-size: 18px; }
+.team.team-list .team-photo { float: left; width: 40%; } 
+.team.team-list .team-description { position: relative; overflow: hidden; text-align: left; } 
+.team.team-list .team-description { padding-top: 0; }
+.team.team-list.team-hover .social-icons { opacity: 1; left: inherit; top: inherit; margin-top:15px; }
+.team.team-list.team-hover .social-icons li { float: left;  }
+.team.team-list.team-hover .team-description { padding: 30px 20px 50px; }
+
+/*team-overlay*/
+.team.team-overlay { position: relative; }
+.team.team-overlay .team-description { width: 100%; padding: 10px 0px; position: absolute;  bottom: 10px; display: block;  margin-top: 0; float: left; z-index: 9; padding-left: 20px; left: 0;  transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out;  -ms-transition: all 0.5s ease-in-out;  -o-transition: all 0.5s ease-in-out; }
+.team.team-overlay .team-description span { display: block; }
+.team.team-overlay:before { z-index: 1; position: absolute; width: 100%; left: 0; right: 0; bottom: 0; content: ""; ackground: -moz-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.9) 100%); background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,0)),color-stop(100%,rgba(0,0,0,0.9))); background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.9) 100%); background: -o-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.9) 100%); background: -ms-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.9) 100%);  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.9) 100%); top: auto; height: 75%; transition: all .35s; }
+.team.team-overlay img { transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; }
+.team.team-overlay:hover img { -webkit-transform:scale(1.20);  -moz-transform:scale(1.20); -ms-transform:scale(1.20);  -o-transform:scale(1.20);  transform:scale(1.20); }
+.team.team-overlay.team-hover .social-icons, .team.team-overlay.team-hover .team-contact { display: none; }
