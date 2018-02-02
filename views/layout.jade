@@ -3,5 +3,33 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='keywords', content='HTML5 Template')
+    meta(name='description', content='Webster - Multi-Purpose HTML5 Template')
+    meta(name='author', content='potenzaglobalsolutions.com')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Webster — Responsive Multi-purpose HTML5 Template
+    // Favicon
+    link(rel='shortcut icon', href='images/favicon.ico')
+    // font
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,500i,600,700,800,900|Poppins:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800')
+    // Plugins
+    link(rel='stylesheet', type='text/css', href='stylesheets/plugins-css.css')
+    // revoluation
+    link(rel='stylesheet', type='text/css', href='revolution/css/settings.css', media='screen')
+    // Typography
+    link(rel='stylesheet', type='text/css', href='stylesheets/typography.css')
+    // Shortcodes
+    link(rel='stylesheet', type='text/css', href='stylesheets/shortcodes/shortcodes.css')
+    // Style
+    link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+    // Responsive
+    link(rel='stylesheet', type='text/css', href='stylesheets/responsive.css')
   body
+    .wrapper
+    include header
     block content
+
+    include footer
