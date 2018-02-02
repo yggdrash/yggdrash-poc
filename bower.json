@@ -1,0 +1,30 @@
+{
+  "name": "yggdrash-poc",
+  "description": "yggdrash Proof of concept, just Mockup",
+  "main": "index.js",
+  "authors": [
+    "odin@yggdrash.io"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "yggdrash",
+    "poc",
+    "blockchain",
+    "ico"
+  ],
+  "homepage": "https://github.com/yggdrash/yggdrash-poc",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "qrcode.js": "qrcode-js#*",
+    "font-awesome": "font-awsome#^4.6.3",
+    "html5.qrcode": "*",
+    "awesome-bootstrap-checkbox": "^0.3.7"
+  }
+}
