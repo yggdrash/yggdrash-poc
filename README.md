@@ -1,6 +1,7 @@
-# yggdrash_poc
+# Blockchain Plafiorm Yggdrash POC
 yggdrash proof of concept
 
+## how to install
 ```bash
     
     # brew install
@@ -15,8 +16,10 @@ yggdrash proof of concept
     npm install
     bower install
     
-    # start yggdrash poc
+    # start yggdrash poc dev
     nodemon bin/www
     
-
+    # start ygdrash poc in development
+    npm install forever -g
+    forever start bin/www
 ```

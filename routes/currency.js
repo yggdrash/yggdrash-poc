@@ -9,15 +9,13 @@ const contents = [
 
     /* GET home page. */
 router.get('/', function(req, res, next) {
-
-
-
-  res.render('index',
+  res.render('currency/view',
       {
         title: 'Yggdrash Browser',
-        content: contents
+          branch_name: contents[0].name,
+          branch_address: contents[0].address
       }
-      );
+  );
 });
 
 module.exports = router;

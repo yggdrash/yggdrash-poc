@@ -1,0 +1,157 @@
+extends ../layout
+
+block content
+    // branch information
+    .container
+        section
+            .row
+                .col-md-12
+                    h1= branch_name
+            .row
+                .col-md-12
+                    .panel.panel-default
+                        .panel-heading
+                            h3.panel-title Branch Information
+                        .panel-body
+                            p
+                                h5
+                                    span.label.label-info Branch Address
+                                    | &nbsp;
+                                    span= branch_address
+                            p
+                                .center-block
+                                | 브랜치 설명
+                            p
+                                h5
+                                    span.label.label-info YEED
+                                    | &nbsp;
+                                    span 10,000
+                            p
+                                h5
+                                    span.label.label-info TP
+                                    | &nbsp;
+                                    span 123
+
+        section
+            // self account information
+            .row
+                .col-md-12
+                    .panel.panel-default
+                        .panel-heading
+                            h3.panel-title Account
+                        .panel-body
+                            p
+                                h4
+                                    span.label.label-default address
+                                    | &nbsp;
+                                    span d04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
+                            p
+                                h4
+                                    span.label.label-default balance
+                                    | &nbsp;
+                                    span 1234567.12345678
+        section
+            .row
+                .col-md-12
+                    .panel.panel-default
+                        .panel-heading
+                            h3.panel-title Exchange
+                        .panel-body
+                            form
+                                // .input-group
+                                    span.input-group-addon(for='from') From
+                                    input#from.form-control(placeholder="Username")
+                                p
+                                    .input-group
+                                        span.input-group-addon(for='sendto') To Account
+                                        input#sendto.form-control(placeholder="account address")
+                                p
+                                    button#sendbtn.btn.btn-success Send
+
+
+        section
+            .row
+                .col-md-12
+                    .panel.panel-default
+                        .panel-heading
+                            h3.panel-title Branch History
+                        .panel-body
+                            table.table
+                                tr
+                                    th
+                                        i.glyphicon.glyphicon-th
+                                        |  block address
+                                    th height
+                                    th transactions
+                                    th timestamp
+                                    th signer
+                                    th sign
+                                tr
+                                    td
+                                        i.glyphicon.glyphicon-link
+                                        |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
+                                    td
+                                        span
+                                            i.glyphicon.glyphicon-th-list
+                                            |  1234
+                                    td
+                                        span
+                                            i.glyphicon.glyphicon-list-alt
+                                            |  999
+                                    td
+                                        span
+                                            i.glyphicon.glyphicon-time
+                                            |  02/07/18 13:99:22
+                                    td.text-center
+                                        i.glyphicon.glyphicon-pencil
+                                    td.text-center
+                                        i.glyphicon.glyphicon-ok-sign
+                                tr
+                                    td
+                                        i.glyphicon.glyphicon-link
+                                        |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
+                                    td
+                                        span
+                                            i.glyphicon.glyphicon-th-list
+                                            |  1234
+                                    td
+                                        span
+                                            i.glyphicon.glyphicon-list-alt
+                                            |  999
+                                    td
+                                        span
+                                            i.glyphicon.glyphicon-time
+                                            |  02/07/18 13:99:22
+                                    td.text-center
+                                        i.glyphicon.glyphicon-pencil
+                                    td.text-center
+                                        i.glyphicon.glyphicon-ok-sign
+                                tr
+                                    td
+                                        i.glyphicon.glyphicon-link
+                                        |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
+                                    td
+                                        span
+                                            i.glyphicon.glyphicon-th-list
+                                            |  1234
+                                    td
+                                        span
+                                            i.glyphicon.glyphicon-list-alt
+                                            |  999
+                                    td
+                                        span
+                                            i.glyphicon.glyphicon-time
+                                            |  02/07/18 13:99:22
+                                    td.text-center
+                                        i.glyphicon.glyphicon-pencil
+                                    td.text-center
+                                        i.glyphicon.glyphicon-ok-sign
+
+block footscript
+    script.
+        $(function(){
+            $("#sendbtn").click(function(){
+                alert("click");
+                return false;
+            });
+        });
