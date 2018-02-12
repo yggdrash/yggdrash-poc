@@ -3,11 +3,25 @@ var router = express.Router();
 const crypto = require('crypto');
 
 const contents = [
-  {name:'contest1', address:'d04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa'},
-  {name:'contest2', address:'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'}
+    {
+        name: 'btc',
+        address: 'da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd',
+        description: 'bitcoin',
+        yeed: 1000000,
+        truthpoint: 1000
+    },
+    {
+        name: 'btg',
+        address: 'f7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5',
+        description: 'bitcoin Gold',
+        yeed: 1000000,
+        truthpoint: 1000
+
+
+    }
 ];
 
-    /* GET home page. */
+/* GET home page.
 router.get('/', function(req, res, next) {
   res.render('currency/view',
       {
@@ -16,6 +30,24 @@ router.get('/', function(req, res, next) {
           branch_address: contents[0].address
       }
   );
+});
+*/
+router.get('/:id', function (req, res, next) {
+    console.log('ok');
+    var target = null;
+    for (var i in contents) {
+        if (contents[i].address == req.param('id')) {
+            target = contents[i];
+            break;
+        }
+    }
+    console.log(target);
+    res.render('currency/view',
+        {
+            title: 'Yggdrash Browser',
+            currency: target
+        }
+    );
 });
 
 module.exports = router;

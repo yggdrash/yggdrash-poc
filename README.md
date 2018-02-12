@@ -1,5 +1,11 @@
-# Blockchain Plafiorm Yggdrash POC
+# Blockchain Plaform Yggdrash POC
 yggdrash proof of concept
+
+H : http://yggdrash.io
+
+## Trust-based Multidimensional Blockchains
+### Internet re-designed by blockchains
+
 
 ## how to install
 ```bash
