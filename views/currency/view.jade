@@ -57,13 +57,14 @@ block content
                             h3.panel-title Exchange
                         .panel-body
                             form
-                                // .input-group
-                                    span.input-group-addon(for='from') From
-                                    input#from.form-control(placeholder="Username")
                                 p
                                     .input-group
                                         span.input-group-addon(for='sendto') To Account
                                         input#sendto.form-control(placeholder="account address")
+                                p
+                                    .input-group
+                                        span.input-group-addon(for='sendvalue') Value
+                                        input#sendvalue.form-control(placeholder="Value",min="0",data-bind="value:replyNumber")
                                 p
                                     button#sendbtn.btn.btn-success Send
 
@@ -75,76 +76,77 @@ block content
                         .panel-heading
                             h3.panel-title Branch History
                         .panel-body
-                            table.table
-                                tr
-                                    th
-                                        i.glyphicon.glyphicon-th
-                                        |  block address
-                                    th height
-                                    th transactions
-                                    th timestamp
-                                    th signer
-                                    th sign
-                                tr
-                                    td
-                                        i.glyphicon.glyphicon-link
-                                        |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
-                                    td
-                                        span
-                                            i.glyphicon.glyphicon-th-list
-                                            |  1234
-                                    td
-                                        span
-                                            i.glyphicon.glyphicon-list-alt
-                                            |  999
-                                    td
-                                        span
-                                            i.glyphicon.glyphicon-time
-                                            |  02/07/18 13:99:22
-                                    td.text-center
-                                        i.glyphicon.glyphicon-pencil
-                                    td.text-center
-                                        i.glyphicon.glyphicon-ok-sign
-                                tr
-                                    td
-                                        i.glyphicon.glyphicon-link
-                                        |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
-                                    td
-                                        span
-                                            i.glyphicon.glyphicon-th-list
-                                            |  1234
-                                    td
-                                        span
-                                            i.glyphicon.glyphicon-list-alt
-                                            |  999
-                                    td
-                                        span
-                                            i.glyphicon.glyphicon-time
-                                            |  02/07/18 13:99:22
-                                    td.text-center
-                                        i.glyphicon.glyphicon-pencil
-                                    td.text-center
-                                        i.glyphicon.glyphicon-ok-sign
-                                tr
-                                    td
-                                        i.glyphicon.glyphicon-link
-                                        |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
-                                    td
-                                        span
-                                            i.glyphicon.glyphicon-th-list
-                                            |  1234
-                                    td
-                                        span
-                                            i.glyphicon.glyphicon-list-alt
-                                            |  999
-                                    td
-                                        span
-                                            i.glyphicon.glyphicon-time
-                                            |  02/07/18 13:99:22
-                                    td.text-center
-                                        i.glyphicon.glyphicon-pencil
-                                    td.text-center
-                                        i.glyphicon.glyphicon-ok-sign
+                            .table-responsive
+                                table.table
+                                    tr
+                                        th
+                                            i.glyphicon.glyphicon-th
+                                            |  block address
+                                        th height
+                                        th transactions
+                                        th timestamp
+                                        th signer
+                                        th sign
+                                    tr
+                                        td
+                                            i.glyphicon.glyphicon-link
+                                            |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
+                                        td
+                                            span
+                                                i.glyphicon.glyphicon-th-list
+                                                |  1234
+                                        td
+                                            span
+                                                i.glyphicon.glyphicon-list-alt
+                                                |  999
+                                        td
+                                            span
+                                                i.glyphicon.glyphicon-time
+                                                |  02/07/18 13:99:22
+                                        td.text-center
+                                            i.glyphicon.glyphicon-pencil
+                                        td.text-center
+                                            i.glyphicon.glyphicon-ok-sign
+                                    tr
+                                        td
+                                            i.glyphicon.glyphicon-link
+                                            |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
+                                        td
+                                            span
+                                                i.glyphicon.glyphicon-th-list
+                                                |  1234
+                                        td
+                                            span
+                                                i.glyphicon.glyphicon-list-alt
+                                                |  999
+                                        td
+                                            span
+                                                i.glyphicon.glyphicon-time
+                                                |  02/07/18 13:99:22
+                                        td.text-center
+                                            i.glyphicon.glyphicon-pencil
+                                        td.text-center
+                                            i.glyphicon.glyphicon-ok-sign
+                                    tr
+                                        td
+                                            i.glyphicon.glyphicon-link
+                                            |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
+                                        td
+                                            span
+                                                i.glyphicon.glyphicon-th-list
+                                                |  1234
+                                        td
+                                            span
+                                                i.glyphicon.glyphicon-list-alt
+                                                |  999
+                                        td
+                                            span
+                                                i.glyphicon.glyphicon-time
+                                                |  02/07/18 13:99:22
+                                        td.text-center
+                                            i.glyphicon.glyphicon-pencil
+                                        td.text-center
+                                            i.glyphicon.glyphicon-ok-sign
 
 block footscript
     script.

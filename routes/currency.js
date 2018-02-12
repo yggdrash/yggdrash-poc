@@ -18,6 +18,24 @@ const contents = [
         truthpoint: 1000
 
 
+    },
+    {
+        name: 'eth',
+        address: 'f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8',
+        description: 'Ethereum Homstead',
+        yeed: 1000000,
+        truthpoint: 1000
+
+
+    },
+    {
+        name: 'etc',
+        address: '1cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131',
+        description: 'Ethereum Classic',
+        yeed: 1000000,
+        truthpoint: 1000
+
+
     }
 ];
 
