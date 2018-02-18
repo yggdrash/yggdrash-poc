@@ -59,14 +59,18 @@ block content
                             form
                                 p
                                     .input-group
-                                        span.input-group-addon(for='sendto') To Account
+                                        span.input-group-addon(for='sendto') To
                                         input#sendto.form-control(placeholder="account address")
                                 p
                                     .input-group
                                         span.input-group-addon(for='sendvalue') Value
                                         input#sendvalue.form-control(placeholder="Value",min="0",data-bind="value:replyNumber")
                                 p
-                                    button#sendbtn.btn.btn-success Send
+                                    .input-group
+                                        span.input-group-addon(for='send-data') data
+                                        input#send-data.form-control(placeholder="0x0")
+                                p
+                                    span#sendbtn.btn.btn-success(data-toggle="modal",data-target="#sendTransaction") Send
 
 
         section
@@ -148,11 +152,29 @@ block content
                                         td.text-center
                                             i.glyphicon.glyphicon-ok-sign
 
+        #sendTransaction.modal.fade(tabindex='-1', role='dialog', aria-labelledby='Send Transaction')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') &times;
+                        h4#exampleModalLabel.modal-title Send Transaction
+                    .modal-body
+                        form
+                            .form-group
+                                label.control-label(for='recipient-name') address &nbsp;
+                                span da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd
+                                input#recipient-name.form-control(type='text')
+
+                            .form-group
+                                label.control-label(for='message-text') Message:
+                                input#transctionSign.form-control(type='password')
+                    .modal-footer
+                        button.btn.btn-default(type='button', data-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Send Transaction
+
 block footscript
     script.
         $(function(){
-            $("#sendbtn").click(function(){
-                alert("click");
-                return false;
-            });
+            $('#sendTransaction').modal('hide');
         });

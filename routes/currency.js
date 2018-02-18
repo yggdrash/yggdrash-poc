@@ -39,9 +39,9 @@ const contents = [
     }
 ];
 
-/* GET home page.
+/* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('currency/view',
+  res.render('currency/list',
       {
         title: 'Yggdrash Browser',
           branch_name: contents[0].name,
@@ -49,7 +49,7 @@ router.get('/', function(req, res, next) {
       }
   );
 });
-*/
+
 router.get('/:id', function (req, res, next) {
     console.log('ok');
     var target = null;
