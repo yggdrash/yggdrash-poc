@@ -27,55 +27,49 @@
             "description": "yggdrash bitcoin gold",
             "owner": "0X961586E538C0F3657475B590374958401384AA0B",
             "type":"currency",
-            "createdat": 101
+            "createdat": 1015
         },
         "f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8": {
             "name": "yethereum",
             "description": "yethereum homestated",
             "owner": "0X961586E538C0F3657475B590374958401384AA0B",
             "type":"currency",
-            "createdat": 101
+            "createdat": 2101
         },
-        "1cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131s": {
+        "1cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131": {
             "name": "yethereumclassic",
             "description": "yEthereum Classic",
             "owner": "0X961586E538C0F3657475B590374958401384AA0B",
             "type":"currency",
-            "createdat": 101
+            "createdat": 3101
         },
-        "c7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db51": {
-            "name": "ybitcoingold",
-            "description": "yggdrash bitcoin gold",
+        "c7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5": {
+            "name": "WON",
+            "description": "KOREA WON BY ANYBANK",
             "owner": "0X961586E538C0F3657475B590374958401384AA0B",
             "type":"currency",
-            "createdat": 101
+            "createdat": 41401
         },
         "g7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5": {
-            "name": "ybitcoingold",
-            "description": "yggdrash bitcoin gold",
+            "name": "USD",
+            "description": "US Dollar BY THEBANK",
             "owner": "0X961586E538C0F3657475B590374958401384AA0B",
             "type":"currency",
-            "createdat": 101
+            "createdat": 90101
         },
-        "1cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131": {
-            "name": "ybitcoingold",
-            "description": "yggdrash bitcoin gold",
+        "2cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131": {
+            "name": "CNY",
+            "description": "China, Yuan Renminbi BY TTBANK",
             "owner": "0X961586E538C0F3657475B590374958401384AA0B",
             "type":"currency",
-            "createdat": 101
+            "createdat": 987101
         },
         "h7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5": {
-            "name": "ybitcoingold",
-            "description": "yggdrash bitcoin gold",
+            "name": "JPY",
+            "description": "Japanese Yen BY etcBANK",
             "owner": "0X961586E538C0F3657475B590374958401384AA0B",
             "type":"currency",
-            "createdat": 101
-        },
-        "b4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8": {
-            "name": "ybitcoingold",
-            "description": "yggdrash bitcoin gold",
-            "owner": "0X961586E538C0F3657475B590374958401384AA0B",
-            "createdat": 101
+            "createdat": 876101
         }
 
     }

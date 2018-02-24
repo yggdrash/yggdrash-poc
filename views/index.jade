@@ -21,41 +21,12 @@ block content
               li.list-group-item #{ledger["currency"][val]["description"]}
               li.list-group-item #{ledger["currency"][val]["owner"]}
               li.list-group-item
-                span.label.label-info YEED
-                span.number  #{yeed[val]}
-              li.list-group-item
                 span.label.label-info RP
                 |  #{sacred[val]}
-
-      .row
-        .col-md-3
-          ul.list-group
-            li.list-group-item
-              a.btn.btn-defalt(href='/currency/da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd')
-                i.fa.fa-krw
-                |  WON
-            li.list-group-item KOREA WON
-        .col-md-3
-          ul.list-group
-            li.list-group-item
-              a.btn.btn-defalt(href='/currency/f7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5')
-                i.fa.fa-usd
-                |  USD
-              li.list-group-item US Dollar
-        .col-md-3
-          ul.list-group
-            li.list-group-item
-              a.btn.btn-defalt(href='/currency/f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8')
-                i.fa.fa-cny
-                |  CNY
-            li.list-group-item China, Yuan Renminbi
-        .col-md-3
-          ul.list-group
-            li.list-group-item
-              a.btn.btn-defalt(href='/currency/1cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131')
-                i.fa.fa-jpy
-                |  JPY
-            li.list-group-item Japanese Yen
+                span.badge
+                  span.label YEED
+                  | #{yeed[val]}
+          
       .row
         .col-md-12
           h2 Decentralized Exchanges
