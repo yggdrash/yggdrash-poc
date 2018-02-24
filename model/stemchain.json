@@ -1,0 +1,83 @@
+{
+    "yeed": {
+        "da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd": 100
+    },
+    "reputation" : {
+        "da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd": 100
+    },
+    "exchange" : {
+
+    },
+    "asset": {
+
+    },
+    "contents": {
+
+    },
+    "currency" : {
+        "da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd": {
+            "name": "ybitcoin",
+            "description": "yggdrash bitcoin",
+            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "type":"currency",
+            "createdat": 100
+        },
+        "d7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5": {
+            "name": "ybitcoingold",
+            "description": "yggdrash bitcoin gold",
+            "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+            "type":"currency",
+            "createdat": 101
+        },
+        "f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8": {
+            "name": "yethereum",
+            "description": "yethereum homestated",
+            "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+            "type":"currency",
+            "createdat": 101
+        },
+        "1cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131s": {
+            "name": "yethereumclassic",
+            "description": "yEthereum Classic",
+            "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+            "type":"currency",
+            "createdat": 101
+        },
+        "c7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db51": {
+            "name": "ybitcoingold",
+            "description": "yggdrash bitcoin gold",
+            "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+            "type":"currency",
+            "createdat": 101
+        },
+        "g7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5": {
+            "name": "ybitcoingold",
+            "description": "yggdrash bitcoin gold",
+            "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+            "type":"currency",
+            "createdat": 101
+        },
+        "1cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131": {
+            "name": "ybitcoingold",
+            "description": "yggdrash bitcoin gold",
+            "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+            "type":"currency",
+            "createdat": 101
+        },
+        "h7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5": {
+            "name": "ybitcoingold",
+            "description": "yggdrash bitcoin gold",
+            "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+            "type":"currency",
+            "createdat": 101
+        },
+        "b4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8": {
+            "name": "ybitcoingold",
+            "description": "yggdrash bitcoin gold",
+            "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+            "createdat": 101
+        }
+
+    }
+}
+
