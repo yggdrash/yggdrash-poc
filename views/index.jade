@@ -15,18 +15,23 @@ block content
           .col-md-3
             ul.list-group
               li.list-group-item
-                a.btn.btn-defalt(href="/currency/#{val}", alt="#{val}")
+                a.btn.btn-defalt(href="/currency/#{val}", alt="#{val}",data-toggle="popover", data-trigger="hover", data-content="#{val}")
                   i.glyphicon.glyphicon-bitcoin
                   | #{ledger["currency"][val]["name"]}
               li.list-group-item #{ledger["currency"][val]["description"]}
-              li.list-group-item #{ledger["currency"][val]["owner"]}
               li.list-group-item
                 span.label.label-info RP
                 |  #{sacred[val]}
                 span.badge
                   span.label YEED
                   | #{yeed[val]}
-          
+              li.list-group-item
+                .hash.word-break
+                  a(href='/account/#{ledger["currency"][val]["owner"]}')
+                    | #{ledger["currency"][val]["owner"]} &nbsp;
+                    span.label.label-info RP
+                      |  #{sacred[ledger["currency"][val]["owner"]]}
+
       .row
         .col-md-12
           h2 Decentralized Exchanges

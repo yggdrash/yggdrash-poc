@@ -3,3 +3,8 @@
 .hash {
     font-family: 'Inconsolata';
 }
+
+.word-break{
+    word-wrap: break-word;
+    /*overflow-wrap:break-word;*/
+}

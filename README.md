@@ -29,3 +29,6 @@ H : http://yggdrash.io
     npm install forever -g
     forever start bin/www
 ```
+
+# IT IS DEMO
+![alt text](https://raw.githubusercontent.com/yggdrash/yggdrash-poc/develop/resource/yggdrash-browser.png)
