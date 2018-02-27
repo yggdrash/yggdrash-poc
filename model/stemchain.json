@@ -6,6 +6,32 @@
         "da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd": 100
     },
     "exchange" : {
+        "b4f2332cc5bc34bc569389733d1d80d2238ec91001ad3ae8b77750baf7005f85":{
+            "name": "YEED TO Ethereum",
+            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "meta":{
+                "from":"83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156",
+                "to":"f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8",
+                "symbol":"YEED TO ETH",
+                "type":"exchange",
+                "description": "yggdrash TO ETH"
+            },
+            "type":"immutable",
+            "createdat": 100
+        },
+        "bbf2d10831921eb2138c5c32daded22c6d5867b946e9ce84b4e42224e487cbdc":{
+            "name": "Ethereum TO YEED",
+            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "meta":{
+                "from":"f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8",
+                "to":"83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156",
+                "symbol":"YEED TO ETH",
+                "type":"exchange",
+                "description": "ETH TO YEED"
+            },
+            "type":"immutable",
+            "createdat": 100
+        }
 
     },
     "asset": {
@@ -21,7 +47,18 @@
             "meta":{
                 "symbol":"YEED",
                 "type":"currency",
-                "description": "yggdrash YEED"
+                "description": "Yggdrash YEED"
+            },
+            "type":"immutable",
+            "createdat": 100
+        },
+        "f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8": {
+            "name": "ethereum",
+            "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+            "meta":{
+                "type":"currency",
+                "symbol":"ETH",
+                "description": "Yggdrash ETH"
             },
             "type":"immutable",
             "createdat": 100
@@ -47,17 +84,6 @@
             },
             "type":"standard",
             "createdat": 1015
-        },
-        "f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8": {
-            "name": "yethereum",
-            "owner": "0X961586E538C0F3657475B590374958401384AA0B",
-            "meta":{
-                "type":"currency",
-                "symbol":"ETH",
-                "description": "yethereum homestated"
-            },
-            "type":"standard",
-            "createdat": 2101
         },
         "1cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131": {
             "name": "yethereumclassic",
