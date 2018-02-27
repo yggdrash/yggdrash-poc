@@ -3,7 +3,7 @@ yggdrash proof of concept
 
 H : http://yggdrash.io
 
-## Trust-based Multidimensional Blockchains
+## TRUST-based Multi-dimensional Blockchains
 ### Internet re-designed by blockchains
 
 

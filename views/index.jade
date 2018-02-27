@@ -41,6 +41,33 @@ block content
         .col-md-12
           h2 Decentralized Exchanges
       .row
+
+          each index,val in ledger["exchange"]
+            .col-md-3
+              ul.list-group
+                li.list-group-item
+                  a.btn.btn-defalt(href="/currency/#{val}", alt="#{val}",data-toggle="tooltip", data-placement="top", title="#{val}")
+                    i.glyphicon.glyphicon-bitcoin
+                    |  #{ledger["exchange"][val]["meta"]["symbol"]}
+                li.list-group-item #{ledger["exchange"][val]["meta"]["description"]}
+                li.list-group-item
+                  if ledger["exchange"][val]["type"] == "immutable"
+                    span.label.label-info immutable
+                  if ledger["exchange"][val]["type"] !== "immutable"
+                    span.label.label-info RP
+                    |  #{sacred[val]}
+                  if yeed[val] !== undefined
+                    span.badge
+                      span.label YEED
+                      | #{yeed[val]}
+                li.list-group-item
+                  .hash.word-break
+                    a(href='/account/#{ledger["exchange"][val]["owner"]}')
+                      | #{ledger["exchange"][val]["owner"]}
+                    | &nbsp;
+                    span.label.label-info RP
+                      |  #{sacred[ledger["exchange"][val]["owner"]]}
+      .row
         .col-md-3
           ul.list-group
             li.list-group-item
