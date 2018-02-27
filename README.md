@@ -25,7 +25,7 @@ H : http://yggdrash.io
     # start yggdrash poc dev
     nodemon bin/www
     
-    # start ygdrash poc in development
+    # start yggdrash poc in development
     npm install forever -g
     forever start bin/www
 ```
