@@ -31,4 +31,4 @@ H : http://yggdrash.io
 ```
 
 # IT IS DEMO
-![alt text](https://raw.githubusercontent.com/yggdrash/yggdrash-poc/develop/resource/yggdrash-browser.png)
+![DEMO](https://raw.githubusercontent.com/yggdrash/yggdrash-poc/develop/resource/yggdrash-browser.png)

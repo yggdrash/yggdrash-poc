@@ -8,3 +8,7 @@
     word-wrap: break-word;
     /*overflow-wrap:break-word;*/
 }
+
+div.tooltip.fade {
+    word-break: break-all;
+}

@@ -15,63 +15,94 @@
 
     },
     "currency" : {
+        "83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156": {
+            "name": "YEED",
+            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "meta":{
+                "symbol":"YEED",
+                "type":"currency",
+                "description": "yggdrash YEED"
+            },
+            "type":"immutable",
+            "createdat": 100
+        },
         "da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd": {
             "name": "ybitcoin",
-            "description": "yggdrash bitcoin",
             "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
-            "type":"currency",
+            "meta":{
+                "symbol":"BTC",
+                "type":"currency",
+                "description": "yggdrash bitcoin"
+            },
+            "type":"standard",
             "createdat": 100
         },
         "d7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5": {
             "name": "ybitcoingold",
-            "description": "yggdrash bitcoin gold",
             "owner": "0X961586E538C0F3657475B590374958401384AA0B",
-            "type":"currency",
+            "meta":{
+                "type":"currency",
+                "symbol":"BTG",
+                "description": "yggdrash bitcoin gold"
+            },
+            "type":"standard",
             "createdat": 1015
         },
         "f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8": {
             "name": "yethereum",
-            "description": "yethereum homestated",
             "owner": "0X961586E538C0F3657475B590374958401384AA0B",
-            "type":"currency",
+            "meta":{
+                "type":"currency",
+                "symbol":"ETH",
+                "description": "yethereum homestated"
+            },
+            "type":"standard",
             "createdat": 2101
         },
         "1cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131": {
             "name": "yethereumclassic",
-            "description": "yEthereum Classic",
             "owner": "0X961586E538C0F3657475B590374958401384AA0B",
-            "type":"currency",
+            "meta":{
+                "type":"currency",
+                "symbol":"ETC",
+                "description": "yEthereum Classic"
+            },
+            "type":"standard",
             "createdat": 3101
         },
         "c7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5": {
-            "name": "WON",
-            "description": "KOREA WON BY ANYBANK",
+            "name": "KOREA WON",
             "owner": "0X961586E538C0F3657475B590374958401384AA0B",
-            "type":"currency",
+            "meta":{
+                "type":"currency",
+                "symbol":"KRW",
+                "description": "KOREA WON BY ANYBANK"
+            },
+            "type":"standard",
             "createdat": 41401
         },
         "g7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5": {
-            "name": "USD",
-            "description": "US Dollar BY THEBANK",
+            "name": "Us Dollar",
             "owner": "0X961586E538C0F3657475B590374958401384AA0B",
-            "type":"currency",
+            "meta":{
+                "type":"currency",
+                "symbol":"USD",
+                "description": "US Dollar BY THEBANK"
+            },
+            "type":"standard",
             "createdat": 90101
         },
         "2cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131": {
-            "name": "CNY",
-            "description": "China, Yuan Renminbi BY TTBANK",
+            "name": "China, Yuan Renminbi",
             "owner": "0X961586E538C0F3657475B590374958401384AA0B",
-            "type":"currency",
+            "meta":{
+                "type":"currency",
+                "symbol":"CNY",
+                "description": "China, Yuan Renminbi BY TTBANK"
+            },
+            "type":"standard",
             "createdat": 987101
-        },
-        "h7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5": {
-            "name": "JPY",
-            "description": "Japanese Yen BY etcBANK",
-            "owner": "0X961586E538C0F3657475B590374958401384AA0B",
-            "type":"currency",
-            "createdat": 876101
         }
-
     }
 }
 
