@@ -64,13 +64,15 @@ block content
                   - console.log(ledger["currency"][ledger["exchange"][val]["meta"]["from"]]);
                   - console.log("\n");
                   span.label.label-info From
-                  a(href='/currency/#{ledger["exchange"][val]["meta"]["from"]}') &nbsp;
+                  | &nbsp;
+                  a(href='/currency/#{ledger["exchange"][val]["meta"]["from"]}')
                     i.glyphicon.glyphicon-bitcoin
                     |  #{ledger["currency"][ledger["exchange"][val]["meta"]["from"]]["meta"]["symbol"]}
 
                 li.list-group-item
                   span.label.label-info To
-                  a(href='/currency/#{ledger["exchange"][val]["meta"]["to"]}') &nbsp;
+                  | &nbsp;
+                  a(href='/currency/#{ledger["exchange"][val]["meta"]["to"]}')
                     i.glyphicon.glyphicon-bitcoin
                     |  #{ledger["currency"][ledger["exchange"][val]["meta"]["to"]]["meta"]["symbol"]}
                 li.list-group-item
@@ -80,9 +82,6 @@ block content
                     | &nbsp;
                     span.label.label-info RP
                       |  #{sacred[ledger["exchange"][val]["owner"]]}
-
-
-
       .row
         .col-md-12
           h2 Asset
