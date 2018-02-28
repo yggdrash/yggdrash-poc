@@ -73,12 +73,38 @@ block content
                         .panel-heading
                             h3.panel-title Exchange Ratio
                         .panel-body
+                            - var from_branch = leger["currency"][branch["meta"]["from"]];
+                            - var to_branch = leger["currency"][branch["meta"]["to"]];
                             p
                                 span.label.label-info from
-                                | (address #{branch["meta"]["from"]})
+                                | &nbsp;
+                                a(href='/currency/#{branch["meta"]["from"]}')
+                                    i.glyphicon.glyphicon-bitcoin
+                                    | #{from_branch["meta"]["symbol"]}
+                                | &nbsp;
+                                if from_branch["type"] != 'immutable'
+                                    span.label.label-info RP
+                                        |  #{sacred[branch["meta"]["from"]]}
+                                    | &nbsp;
+                                    span.label.label-info YEED
+                                        | #{yeed[branch["meta"]["from"]]}
+                                else
+                                    span.label.label-success immutable
+
                             p
                                 span.label.label-info to
-                                | (address #{branch["meta"]["to"]})
+                                a(href='/currency/#{branch["meta"]["to"]}')
+                                    i.glyphicon.glyphicon-bitcoin
+                                    | #{to_branch["meta"]["symbol"]}
+                                | &nbsp;
+                                if to_branch["type"] != 'immutable'
+                                    span.label.label-info RP
+                                        |  #{sacred[branch["meta"]["to"]]}
+                                    | &nbsp;
+                                    span.label.label-info YEED
+                                        | #{yeed[branch["meta"]["to"]]}
+                                else
+                                    span.label.label-success immutable
 
         section
             .row

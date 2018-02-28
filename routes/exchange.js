@@ -31,6 +31,7 @@ router.get('/:id', function (req, res, next) {
             title: 'Yggdrash Browser',
             branch: target,
             branch_address:target_id,
+            leger:leger,
             yeed: yeed,
             sacred: sacred
         }
