@@ -28,7 +28,7 @@ router.get('/:id', function (req, res, next) {
     res.render('currency/view',
         {
             title: 'Yggdrash Browser',
-            currency: target,
+            branch: target,
             branch_address:target_id,
             yeed: yeed,
             sacred: sacred

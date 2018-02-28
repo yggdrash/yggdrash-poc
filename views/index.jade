@@ -46,7 +46,7 @@ block content
             .col-md-3
               ul.list-group
                 li.list-group-item
-                  a.btn.btn-defalt(href="/currency/#{val}", alt="#{val}",data-toggle="tooltip", data-placement="top", title="#{val}")
+                  a.btn.btn-defalt(href="/exchange/#{val}", alt="#{val}",data-toggle="tooltip", data-placement="top", title="#{val}")
                     i.glyphicon.glyphicon-bitcoin
                     |  #{ledger["exchange"][val]["meta"]["symbol"]}
                 li.list-group-item #{ledger["exchange"][val]["meta"]["description"]}
@@ -61,8 +61,6 @@ block content
                       span.label YEED
                       | #{yeed[val]}
                 li.list-group-item
-                  - console.log(ledger["currency"][ledger["exchange"][val]["meta"]["from"]]);
-                  - console.log("\n");
                   span.label.label-info From
                   | &nbsp;
                   a(href='/currency/#{ledger["exchange"][val]["meta"]["from"]}')
