@@ -21,7 +21,7 @@ block content
               li.list-group-item #{ledger["currency"][val]["meta"]["description"]}
               li.list-group-item
                 if ledger["currency"][val]["type"] == "immutable"
-                  span.label.label-info immutable
+                  span.label.label-success immutable
                 if ledger["currency"][val]["type"] !== "immutable"
                   span.label.label-info RP
                   |  #{sacred[val]}
@@ -52,7 +52,7 @@ block content
                 li.list-group-item #{ledger["exchange"][val]["meta"]["description"]}
                 li.list-group-item
                   if ledger["exchange"][val]["type"] == "immutable"
-                    span.label.label-info immutable
+                    span.label.label-success immutable
                   if ledger["exchange"][val]["type"] !== "immutable"
                     span.label.label-info RP
                     |  #{sacred[val]}
@@ -61,102 +61,32 @@ block content
                       span.label YEED
                       | #{yeed[val]}
                 li.list-group-item
+                  - console.log(ledger["currency"][ledger["exchange"][val]["meta"]["from"]]);
+                  - console.log("\n");
+                  span.label.label-info From
+                  a(href='/currency/#{ledger["exchange"][val]["meta"]["from"]}') &nbsp;
+                    i.glyphicon.glyphicon-bitcoin
+                    |  #{ledger["currency"][ledger["exchange"][val]["meta"]["from"]]["meta"]["symbol"]}
+
+                li.list-group-item
+                  span.label.label-info To
+                  a(href='/currency/#{ledger["exchange"][val]["meta"]["to"]}') &nbsp;
+                    i.glyphicon.glyphicon-bitcoin
+                    |  #{ledger["currency"][ledger["exchange"][val]["meta"]["to"]]["meta"]["symbol"]}
+                li.list-group-item
                   .hash.word-break
                     a(href='/account/#{ledger["exchange"][val]["owner"]}')
                       | #{ledger["exchange"][val]["owner"]}
                     | &nbsp;
                     span.label.label-info RP
                       |  #{sacred[ledger["exchange"][val]["owner"]]}
+
+
+
       .row
-        .col-md-3
-          ul.list-group
-            li.list-group-item
-              a.btn.btn-defalt(href='/exchange/da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd')
-                i.fa.fa-bitcoin
-                |  WON&nbsp;
-                i.fa.fa-arrow-right
-                | &nbsp;
-                i.fa.fa-bitcoin
-                |  ETH
-            li.list-group-item BTCETH
-        .col-md-3
-          ul.list-group
-            li.list-group-item
-              a.btn.btn-defalt(href='/exchange/f7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5')
-                i.fa.fa-bitcoin
-                  |  ETH&nbsp;
-                  i.fa.fa-arrow-right
-                  | &nbsp;
-                  i.fa.fa-bitcoin
-                  |  BTC
-              li.list-group-item ETHBTC
-        .col-md-3
-          ul.list-group
-            li.list-group-item
-              a.btn.btn-defalt(href='/exchange/f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8')
-                i.fa.fa-bitcoin
-                |  ETH&nbsp;
-                i.fa.fa-arrow-right
-                | &nbsp;
-                i.fa.fa-bitcoin
-                |  ETC
-            li.list-group-item ETHETC
-        .col-md-3
-          ul.list-group
-            li.list-group-item
-              a.btn.btn-defalt(href='/exchange/1cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131')
-                i.fa.fa-bitcoin
-                  |  ETC&nbsp;
-                  i.fa.fa-arrow-right
-                  | &nbsp;
-                  i.fa.fa-bitcoin
-                  |  ETH
-            li.list-group-item ETCETH
-      .row
-        .col-md-3
-          ul.list-group
-            li.list-group-item
-              a.btn.btn-defalt(href='/exchange/da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd')
-                i.fa.fa-krw
-                |  WON&nbsp;
-                i.fa.fa-arrow-right
-                | &nbsp;
-                i.fa.fa-bitcoin
-                |  ETH
-            li.list-group-item WON To ETH
-        .col-md-3
-          ul.list-group
-            li.list-group-item
-              a.btn.btn-defalt(href='/exchange/f7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5')
-                i.fa.fa-bitcoin
-                |  ETH&nbsp;
-                i.fa.fa-arrow-right
-                | &nbsp;
-                i.fa.fa-krw
-                |  WON
-              li.list-group-item ETH To WON
-        .col-md-3
-          ul.list-group
-            li.list-group-item
-              a.btn.btn-defalt(href='/exchange/f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8')
-                i.fa.fa-bitcoin
-                |  ETH&nbsp;
-                i.fa.fa-arrow-right
-                | &nbsp;
-                i.fa.fa-bitcoin
-                |  ETC
-            li.list-group-item Ethereum Homstead
-        .col-md-3
-          ul.list-group
-            li.list-group-item
-              a.btn.btn-defalt(href='/exchange/1cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131')
-                i.fa.fa-bitcoin
-                  |  ETC&nbsp;
-                  i.fa.fa-arrow-right
-                  | &nbsp;
-                  i.fa.fa-bitcoin
-                  |  ETH
-            li.list-group-item Ethereum Classic
+        .col-md-12
+          h2 Asset
+
       .row
         .col-md-12
           h2 Service
@@ -192,26 +122,6 @@ block content
         .col-md-3
           ul.list-group.list-unstyled
             li.list-group-item ...
-            li.list-group-item 이름
-        .col-md-3
-          ul.list-group.list-unstyled
-            li.list-group-item 사진
-            li.list-group-item 이름
-      .row
-        .col-md-12
-          h2 Contents
-      .row
-        .col-md-3
-          ul.list-group.list-unstyled
-            li.list-group-item 사진
-            li.list-group-item 이름
-        .col-md-3
-          ul.list-group.list-unstyled
-            li.list-group-item 사진
-            li.list-group-item 이름
-        .col-md-3
-          ul.list-group.list-unstyled
-            li.list-group-item 사진
             li.list-group-item 이름
         .col-md-3
           ul.list-group.list-unstyled

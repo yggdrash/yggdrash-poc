@@ -32,30 +32,6 @@
             "type":"immutable",
             "createdat": 100
         },
-        "9cbe9454277b9f0a29fc5df98ef529baee48164b871ddb98c323ad8ac85949c2":{
-            "name": "YEED TOKEN TO YEED",
-            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
-            "meta":{
-                "to":"83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156",
-                "symbol":"TOKEN TO YEED",
-                "type":"exchange",
-                "description": "YEED TOKEN exchange YEED"
-            },
-            "type":"immutable",
-            "createdat": 100
-        },
-        "f25d12493fcadcd9ee2137a2ac13294bf872f7479c2a05dde500edd4d968a498":{
-            "name": "YEED TO YEED TOKEN",
-            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
-            "meta":{
-                "from":"83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156",
-                "symbol":"YEED TO TOKEN",
-                "type":"exchange",
-                "description": "YEED TOKEN exchange YEED"
-            },
-            "type":"immutable",
-            "createdat": 100
-        },
         "34b003be7227bdb4921b1327782e28a9b94f2c8983a433009f3ccf2545a9317f":{
             "name": "BTC TO ETH",
             "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
