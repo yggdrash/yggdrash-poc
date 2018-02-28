@@ -73,6 +73,13 @@ block content
                         .panel-heading
                             h3.panel-title Exchange Ratio
                         .panel-body
+                            p
+                                span.label.label-info from
+                                | (address #{branch["meta"]["from"]})
+                            p
+                                span.label.label-info to
+                                | (address #{branch["meta"]["to"]})
+
         section
             .row
                 .col-md-12
@@ -92,7 +99,7 @@ block content
                                 p
                                     span#exchange-btn.btn.btn-success(data-toggle="modal",data-target="#sendTransaction") exchange
 
-       
+
 
         section
             .row
