@@ -6,7 +6,11 @@ block content
         section
             .row
                 .col-md-12
-                    h1= branch.name
+                    p
+                        h1 Branch Chain
+                    p
+                        h2= branch.name
+                            | &nbsp;Branch
             .row
                 .col-md-12
                     .panel.panel-default
@@ -54,11 +58,17 @@ block content
                 .col-md-12
                     .panel.panel-default
                         .panel-heading
-                            h3.panel-title Your Account
+                            h3.panel-title From Branch Account
                         .panel-body
                             p
                                 h4
-                                    span.label.label-default address
+                                    span.label.label-default From Branch address
+                                    | &nbsp;
+                                    a(href='/currency/#{branch["meta"]["from"]}')
+                                        span.hash #{branch["meta"]["from"]}
+                            p
+                                h4
+                                    span.label.label-default From Branch asset account
                                     | &nbsp;
                                     span.hash d04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
                             p
