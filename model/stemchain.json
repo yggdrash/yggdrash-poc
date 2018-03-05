@@ -61,10 +61,99 @@
 
     },
     "asset": {
-
+        "39dd2e60985efad95baa336e4f4a6834e20d171b35c1eb18846c2f074e21bbc7": {
+            "name": "Ai autonomous vehicles",
+            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "meta":{
+                "symbol":"AIAV",
+                "type":"asset",
+                "description": "Ai autonomous vehicles certificate"
+            },
+            "type":"standard",
+            "createdat": 100
+        },
+        "5226954feafeae18181de39d33b5d20b5f78e1ee112684bf04445903bf4db562": {
+            "name": "Real Estate",
+            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "meta":{
+                "symbol":"BRE",
+                "type":"asset",
+                "description": "Real Estate"
+            },
+            "type":"standard",
+            "createdat": 100
+        },
+        "f21dea74d898cfeaf836ecc99ad0331bade09711ff927365e91ada2ff4cb5caf": {
+            "name": "bond",
+            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "meta":{
+                "symbol":"BBOND",
+                "type":"asset",
+                "description": "Yggdrash YEED"
+            },
+            "type":"standard",
+            "createdat": 100
+        },
+        "bfb125a42beb4e53ea10ed412ccf2ec45d8c31bc5603cae19c4fede8e8830a1b": {
+            "name": "gift certificate",
+            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "meta":{
+                "symbol":"BGC",
+                "type":"asset",
+                "description": "gift certificate"
+            },
+            "type":"standard",
+            "createdat": 100
+        }
     },
-    "contents": {
+    "services": {
+        "0d62646ad2a4c5ed523519b8d4d8c11b4de2405ff7f85a65a3d5976e6bacd8fe": {
+            "name": "chatting",
+            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "meta":{
+                "symbol":"CHAT",
+                "type":"services",
+                "description": "chatting for people in blockchain"
+            },
+            "type":"immutable",
+            "createdat": 100
+        },
+        "5f3360fbda697ca7f699633088f4bce3c344574450978c3c430d15a6d3cc7e91": {
+            "name": "Donations",
+            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "meta":{
+                "symbol":"BDFP",
+                "type":"services",
+                "description": "Donations for people"
+            },
+            "type":"standard",
+            "createdat": 100
+        },
+        "c23af781c82e4df0eb35da1ed15ca403683192912877d2b2f2cbb7d80a5fa68f": {
+            "name": "Decentralized Bank",
+            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "meta":{
+                "symbol":"BGC",
+                "type":"services",
+                "description": "Decentralized Bank - loan and save asset",
+                "branchs": [
 
+                ]
+            },
+            "type":"standard",
+            "createdat": 100
+        },
+        "bfb125a42beb4e53ea10ed412ccf2ec45d8c31bc5603cae19c4fede8e8830a1b": {
+            "name": "gift certificate",
+            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "meta":{
+                "symbol":"BGC",
+                "type":"services",
+                "description": "gift certificate"
+            },
+            "type":"standard",
+            "createdat": 100
+        }
     },
     "currency" : {
         "83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156": {
