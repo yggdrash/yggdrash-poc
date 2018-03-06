@@ -83,40 +83,57 @@ block content
         .col-md-12
           h2 Digital Asset Chains
       .row
-        .col-md-3
-          ul.list-group.list-unstyled
-            li.list-group-item Ai autonomous vehicles
-            li.list-group-item 이름
-        .col-md-3
-          ul.list-group.list-unstyled
-            li.list-group-item Real Estate
-            li.list-group-item 이름
-        .col-md-3
-          ul.list-group.list-unstyled
-            li.list-group-item bond
-            li.list-group-item 이름
-        .col-md-3
-          ul.list-group.list-unstyled
-            li.list-group-item gift certificate
-            li.list-group-item 이름
-
+        each index,val in ledger["asset"]
+          .col-md-3
+            ul.list-group
+              li.list-group-item
+                a.btn.btn-defalt(href="/asset/#{val}", alt="#{val}",data-toggle="tooltip", data-placement="top", title="#{val}")
+                  i.glyphicon.glyphicon-bitcoin
+                  |  #{ledger["asset"][val]["meta"]["symbol"]}
+              li.list-group-item #{ledger["asset"][val]["meta"]["description"]}
+              li.list-group-item
+                if ledger["asset"][val]["type"] == "immutable"
+                  span.label.label-success immutable
+                if ledger["asset"][val]["type"] !== "immutable"
+                  span.label.label-info RP
+                  |  #{sacred[val]}
+                if yeed[val] !== undefined
+                  span.badge
+                    span.label YEED
+                    | #{yeed[val]}
+              li.list-group-item
+                .hash.word-break
+                  a(href='/account/#{ledger["asset"][val]["owner"]}')
+                    | #{ledger["asset"][val]["owner"]}
+                  | &nbsp;
+                  span.label.label-info RP
+                    |  #{sacred[ledger["asset"][val]["owner"]]}
       .row
         .col-md-12
           h2 Service Chains
       .row
-        .col-md-3
-          ul.list-group.list-unstyled
-            li.list-group-item Decentralized Bank
-            li.list-group-item 이름
-        .col-md-3
-          ul.list-group.list-unstyled
-            li.list-group-item Donations
-            li.list-group-item 이름
-        .col-md-3
-          ul.list-group.list-unstyled
-            li.list-group-item 사진
-            li.list-group-item 이름
-        .col-md-3
-          ul.list-group.list-unstyled
-            li.list-group-item 사진
-            li.list-group-item 이름
+        each index,val in ledger["services"]
+          .col-md-6
+            ul.list-group
+              li.list-group-item
+                a.btn.btn-defalt(href="/services/#{val}", alt="#{val}",data-toggle="tooltip", data-placement="top", title="#{val}")
+                  i.glyphicon.glyphicon-bitcoin
+                  |  #{ledger["services"][val]["meta"]["symbol"]}
+              li.list-group-item #{ledger["services"][val]["meta"]["description"]}
+              li.list-group-item
+                if ledger["services"][val]["type"] == "immutable"
+                  span.label.label-success immutable
+                if ledger["services"][val]["type"] !== "immutable"
+                  span.label.label-info RP
+                  |  #{sacred[val]}
+                if yeed[val] !== undefined
+                  span.badge
+                    span.label YEED
+                    | #{yeed[val]}
+              li.list-group-item
+                .hash.word-break
+                  a(href='/account/#{ledger["services"][val]["owner"]}')
+                    | #{ledger["services"][val]["owner"]}
+                  | &nbsp;
+                  span.label.label-info RP
+                    |  #{sacred[ledger["services"][val]["owner"]]}
