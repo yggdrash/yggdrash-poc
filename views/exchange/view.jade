@@ -2,6 +2,8 @@ extends ../layout
 
 block content
     // branch information
+    - var from_branch = leger["currency"][branch["meta"]["from"]];
+    - var to_branch = leger["currency"][branch["meta"]["to"]];
     .container
         section
             .row
@@ -62,13 +64,13 @@ block content
                         .panel-body
                             p
                                 h4
-                                    span.label.label-default From Branch address
+                                    span.label.label-default #{from_branch["name"]} Branch address
                                     | &nbsp;
                                     a(href='/currency/#{branch["meta"]["from"]}')
                                         span.hash #{branch["meta"]["from"]}
                             p
                                 h4
-                                    span.label.label-default From Branch asset account
+                                    span.label.label-default Your account
                                     | &nbsp;
                                     span.hash d04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
                             p
@@ -83,8 +85,6 @@ block content
                         .panel-heading
                             h3.panel-title Exchange Ratio
                         .panel-body
-                            - var from_branch = leger["currency"][branch["meta"]["from"]];
-                            - var to_branch = leger["currency"][branch["meta"]["to"]];
                             p
                                 span.label.label-info from
                                 | &nbsp;
@@ -115,6 +115,15 @@ block content
                                         | #{yeed[branch["meta"]["to"]]}
                                 else
                                     span.label.label-success immutable
+                            p
+                                span.label.label-info ratio
+                                span 1 : #{branch_data["ratio"]}
+                            p
+                                span.label.label-info reserve address
+                                span #{branch_data["reserve"]}
+                            p
+                                span.label.label-info reserve
+                                span #{branch_data["reserve"]}
 
         section
             .row
@@ -134,6 +143,7 @@ block content
                                         input#exchange-data.form-control(placeholder="0x0")
                                 p
                                     span#exchange-btn.btn.btn-success(data-toggle="modal",data-target="#sendTransaction") exchange
+
 
 
 
