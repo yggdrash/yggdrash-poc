@@ -6,7 +6,11 @@ block content
         section
             .row
                 .col-md-12
-                    h1= branch.name
+                    p
+                        h1 Branch Chain
+                    p
+                        h2= branch.name
+                            | &nbsp;Branch
             .row
                 .col-md-12
                     .panel.panel-default
@@ -62,10 +66,31 @@ block content
                                     | &nbsp;
                                     span.hash d04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
                             p
-                                h4
-                                    span.label.label-default balance
-                                    | &nbsp;
-                                    span 1234567.12345678
+
+                                ul.list-group
+                                    li.list-group-item.active
+                                        | ASSET
+                                    li.list-group-item
+                                        span.hash b76f6a70016a08f70ff5bd2377ceb4e7f112ef39a0eb41e699f9dd437b719706
+                                        span.pull-right
+                                            a.btn.btn-info.btn-sm
+                                                | INFO
+                                            a.btn.btn-success.btn-sm
+                                                | SELL
+                                    li.list-group-item
+                                        span.hash  a118a333e35cfa308ef52a5c86b7d322bd946156d3ed0af112416b88a6204229
+                                        span.pull-right
+                                            a.btn.btn-info.btn-sm
+                                                | INFO
+                                            a.btn.btn-success.btn-sm
+                                                | SELL
+                                    li.list-group-item
+                                        span.hash  48e828ccc4a6aeafc7e180f1be2e080ba8529c90abfa9e31b4fe49ee0cb13f7d
+                                        span.pull-right
+                                            a.btn.btn-info.btn-sm
+                                                | INFO
+                                            a.btn.btn-success.btn-sm
+                                                | SELL
         section
             .row
                 .col-md-12
@@ -90,7 +115,6 @@ block content
                                         input#transfer-data.form-control(placeholder="0x0")
                                 p
                                     span#transfer-btn.btn.btn-success(data-toggle="modal",data-target="#sendTransaction") Send
-
         section
             .row
                 .col-md-12
@@ -266,7 +290,6 @@ block content
                         span.hash da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd
                     .modal-footer
                         button.btn.btn-default(type='button', data-dismiss='modal') Close
-
 block footscript
     script.
         $(function(){

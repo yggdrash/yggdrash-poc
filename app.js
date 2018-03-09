@@ -10,6 +10,9 @@ var users = require('./routes/users');
 var contents = require('./routes/contents');
 var currency = require('./routes/currency');
 var exchange = require('./routes/exchange');
+var asset = require('./routes/asset');
+var services = require('./routes/services');
+
 var app = express();
 
 // view engine setup
@@ -30,6 +33,8 @@ app.use('/users', users);
 app.use('/contents', contents);
 app.use('/currency', currency);
 app.use('/exchange', exchange);
+app.use('/asset', asset);
+app.use('/services', services);
 
 
 // catch 404 and forward to error handler

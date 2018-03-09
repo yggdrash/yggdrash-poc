@@ -67,7 +67,8 @@
             "meta":{
                 "symbol":"AIAV",
                 "type":"asset",
-                "description": "Ai autonomous vehicles certificate"
+                "description": "Ai autonomous vehicles certificate",
+                "currency":["83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156"]
             },
             "type":"standard",
             "createdat": 100
@@ -78,7 +79,8 @@
             "meta":{
                 "symbol":"BRE",
                 "type":"asset",
-                "description": "Real Estate"
+                "description": "Real Estate",
+                "currency":["83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156"]
             },
             "type":"standard",
             "createdat": 100
@@ -89,7 +91,8 @@
             "meta":{
                 "symbol":"BBOND",
                 "type":"asset",
-                "description": "Yggdrash YEED"
+                "description": "Yggdrash YEED",
+                "currency":["83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156"]
             },
             "type":"standard",
             "createdat": 100
@@ -100,7 +103,8 @@
             "meta":{
                 "symbol":"BGC",
                 "type":"asset",
-                "description": "gift certificate"
+                "description": "gift certificate",
+                "currency":["83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156"]
             },
             "type":"standard",
             "createdat": 100
