@@ -22,9 +22,9 @@ router.get('/:id', function (req, res, next) {
     var fs = require('fs');
     var target = null;
     var target_id = req.param('id');
-    if(leger["asset"][target_id] != undefined)
+    if(leger["asset"][target_id] != undefined){
         target = leger["asset"][req.param('id')];
-    console.log(target);
+    }
     if(fs.existsSync('../views/asset/'+target_id)){
         res.render('asset/'+target_id+'/view',
             {

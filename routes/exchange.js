@@ -28,19 +28,6 @@ router.get('/:id', function (req, res, next) {
     var fs = require('fs');
     var branch_data = require("../model/branchs/"+target_id+".json");
 
-    // fs.readFile(target_data_file, 'utf8', function (err, data) {
-    //     if (err) throw err; // we'll not consider error handling for now
-    //     branch_data = JSON.parse(data);
-    // });
-
-    // if (fs.existsSync(target_data_file)) {
-    //     console.log('File Exist');
-    //     // Do something
-    //     branch_data = require(target_data_file);
-    // }
-    // branch_data = require(target_data_file);
-
-
     console.log(branch_data);
     res.render('exchange/view',
         {

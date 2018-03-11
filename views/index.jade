@@ -24,7 +24,8 @@ block content
                   span.label.label-success immutable
                 if ledger["currency"][val]["type"] !== "immutable"
                   span.label.label-info RP
-                  |  #{sacred[val]}
+                    | &nbsp;
+                    span.number #{sacred[val]}
                 if yeed[val] !== undefined
                     span.badge
                       span.label YEED
