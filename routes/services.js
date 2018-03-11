@@ -26,7 +26,7 @@ router.get('/:id', function (req, res, next) {
         target = leger["services"][req.param('id')];
     }
 
-    if(fs.existsSync('../views/services/'+target_id)) {
+    if(fs.existsSync('views/services/'+target_id)) {
         res.render('services/view',
             {
                 title: 'Yggdrash Browser',
