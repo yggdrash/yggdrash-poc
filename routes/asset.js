@@ -19,21 +19,35 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:id', function (req, res, next) {
-    console.log('ok');
+    var fs = require('fs');
     var target = null;
     var target_id = req.param('id');
-    if(leger["asset"][req.param('id')] != undefined)
+    if(leger["asset"][target_id] != undefined)
         target = leger["asset"][req.param('id')];
     console.log(target);
-    res.render('asset/'+req.param('id')+'/view',
-        {
-            title: 'Yggdrash Browser',
-            branch: target,
-            branch_address:target_id,
-            yeed: yeed,
-            sacred: sacred
-        }
-    );
+    if(fs.existsSync('../views/asset/'+target_id)){
+        res.render('asset/'+target_id+'/view',
+            {
+                title: 'Yggdrash Browser',
+                branch: target,
+                branch_address:target_id,
+                yeed: yeed,
+                sacred: sacred
+            }
+        );
+
+    }else{
+        res.render('sync-require',
+            {
+                title: 'Yggdrash Browser',
+                branch: target,
+                branch_address:target_id,
+                yeed: yeed,
+                sacred: sacred
+            }
+        );
+    }
+
 });
 
 module.exports = router;

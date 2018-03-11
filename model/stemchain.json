@@ -8,13 +8,13 @@
     "exchange" : {
         "b4f2332cc5bc34bc569389733d1d80d2238ec91001ad3ae8b77750baf7005f85":{
             "name": "YEED TO Ethereum",
-            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "owner": "0x1F8f8A219550f89f9D372ab2eE0D1f023EC665a3",
             "meta":{
                 "from":"83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156",
                 "to":"f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8",
                 "symbol":"YEED TO ETH",
                 "type":"exchange",
-                "description": "yggdrash TO ETH"
+                "description": "Yggdrash YEED to ethereum network"
             },
             "type":"immutable",
             "createdat": 100
@@ -34,7 +34,7 @@
         },
         "34b003be7227bdb4921b1327782e28a9b94f2c8983a433009f3ccf2545a9317f":{
             "name": "BTC TO ETH",
-            "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+            "owner": "0x75E2C5175E2E618F48E70343B14C31B280E42D90",
             "meta":{
                 "from":"da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd",
                 "to":"f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8",
@@ -103,7 +103,7 @@
             "meta":{
                 "symbol":"BGC",
                 "type":"asset",
-                "description": "gift certificate",
+                "description": "a certificate that can be purchased, as from a store, for presentation as a gift: it entitles the recipient to select merchandise in the amount indicated",
                 "currency":["83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156"]
             },
             "type":"standard",

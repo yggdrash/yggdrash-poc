@@ -6,5 +6,6 @@
   "type":"exchange",
   "description": "yggdrash TO ETH",
   "ratio":0.02,
-  "reserve":998764
+  "reserve":998764,
+  "reserve_address":"0x1F8f8A219550f89f9D372ab2eE0D1f023EC665a3"
 }

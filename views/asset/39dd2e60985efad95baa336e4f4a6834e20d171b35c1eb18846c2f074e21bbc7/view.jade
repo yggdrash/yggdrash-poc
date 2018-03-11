@@ -72,25 +72,28 @@ block content
                                         | ASSET
                                     li.list-group-item
                                         span.hash b76f6a70016a08f70ff5bd2377ceb4e7f112ef39a0eb41e699f9dd437b719706
-                                        span.pull-right
-                                            a.btn.btn-info.btn-sm
-                                                | INFO
-                                            a.btn.btn-success.btn-sm
-                                                | SELL
+                                        | &nbsp;
+                                        a.btn.btn-info.btn-sm
+                                            | INFO
+                                        | &nbsp;
+                                        a.btn.btn-success.btn-sm
+                                            | SELL
                                     li.list-group-item
                                         span.hash  a118a333e35cfa308ef52a5c86b7d322bd946156d3ed0af112416b88a6204229
-                                        span.pull-right
-                                            a.btn.btn-info.btn-sm
-                                                | INFO
-                                            a.btn.btn-success.btn-sm
-                                                | SELL
+                                        | &nbsp;
+                                        a.btn.btn-info.btn-sm
+                                            | INFO
+                                        | &nbsp;
+                                        a.btn.btn-success.btn-sm
+                                            | SELL
                                     li.list-group-item
                                         span.hash  48e828ccc4a6aeafc7e180f1be2e080ba8529c90abfa9e31b4fe49ee0cb13f7d
-                                        span.pull-right
-                                            a.btn.btn-info.btn-sm
-                                                | INFO
-                                            a.btn.btn-success.btn-sm
-                                                | SELL
+                                        | &nbsp;
+                                        a.btn.btn-info.btn-sm
+                                            | INFO
+                                        | &nbsp;
+                                        a.btn.btn-success.btn-sm
+                                            | SELL
         section
             .row
                 .col-md-12
@@ -107,45 +110,19 @@ block content
                                         input#transfer-to.form-control(placeholder="account address")
                                 p
                                     .input-group
-                                        span.input-group-addon(for='transfer-value') Value
-                                        input#transfer-value.form-control(placeholder="Value",min="0",data-bind="value:replyNumber")
+                                        span.input-group-addon(for='transfer-asset') Asset
+                                        select.selectpicker#transfer-value.form-control(title="Choose one of transfer...")
+                                            option b76f6a70016a08f70ff5bd2377ceb4e7f112ef39a0eb41e699f9dd437b719706
+                                            option a118a333e35cfa308ef52a5c86b7d322bd946156d3ed0af112416b88a6204229
+                                            option 48e828ccc4a6aeafc7e180f1be2e080ba8529c90abfa9e31b4fe49ee0cb13f7d
+
+
                                 p
                                     .input-group
                                         span.input-group-addon(for='transfer-data') data
                                         input#transfer-data.form-control(placeholder="0x0")
                                 p
                                     span#transfer-btn.btn.btn-success(data-toggle="modal",data-target="#sendTransaction") Send
-        section
-            .row
-                .col-md-12
-                    .panel.panel-default
-                        .panel-heading
-                            h3.panel-title Transfer From
-                        .panel-body
-                            form
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='transfer-from')
-                                            i.fa.fa-location-arrow
-                                            | &nbsp;From Address
-                                        input#transfer-from.form-control(placeholder="account address")
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='transfer-to')
-                                            i.fa.fa-location-arrow
-                                            | &nbsp;To Address
-                                        input#transfer-from-to.form-control(placeholder="account address")
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='transfer-from-value') Value
-                                        input#transfer-from-value.form-control(placeholder="Value",min="0",data-bind="value:replyNumber")
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='transfer-from-data') data
-                                        input#transfer-from-data.form-control(placeholder="0x0")
-                                p
-                                    span#transfer-from-btn.btn.btn-success(data-toggle="modal",data-target="#sendTransaction") Send
-
         section
             .row
                 .col-md-12
@@ -162,12 +139,16 @@ block content
                                         input#allocate-account.form-control(placeholder="account address")
                                 p
                                     .input-group
-                                        span.input-group-addon(for='approve-value') Value
-                                        input#allocate-value.form-control(placeholder="Value",min="0",data-bind="value:replyNumber")
+                                        span.input-group-addon(for='approve-asset') Asset
+                                        select.selectpicker#approve-asset.form-control(title="Choose one of approve...")
+                                            option b76f6a70016a08f70ff5bd2377ceb4e7f112ef39a0eb41e699f9dd437b719706
+                                            option a118a333e35cfa308ef52a5c86b7d322bd946156d3ed0af112416b88a6204229
+                                            option 48e828ccc4a6aeafc7e180f1be2e080ba8529c90abfa9e31b4fe49ee0cb13f7d
                                 p
                                     .input-group
                                         span.input-group-addon(for='approve-data') data
-                                        input#allocate-data.form-control(placeholder="0x0")
+                                        input#approve-data.form-control(placeholder="0x0")
+
                                 p
                                     span#allocate-btn.btn.btn-success(data-toggle="modal",data-target="#sendApprove") approve
 
