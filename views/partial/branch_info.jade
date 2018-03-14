@@ -2,34 +2,30 @@
     .panel-heading
         h2.panel-title Branch Information
     .panel-body
-        p
-            h5
-                span.label.label-info
-                    i.fa.fa-location-arrow
-                    | &nbsp;Network Address
-                | &nbsp;
-                span.hash= branch_address
-        p
+        h5
+            span.label.label-info
+                i.fa.fa-location-arrow
+                | &nbsp;Network Address &nbsp;
+            span.hash= branch_address
+        h5
             span.label.label-info Name
             | &nbsp;
             span= branch.name
-        p
+        h5
             span.label.label-info Description
             | &nbsp;
             span= branch.meta.description
         if branch.type != 'immutable'
-            p
-                h5
-                    span.label.label-info Reputation Score
-                    | &nbsp;
-                    span.number #{sacred[branch_address]}
-            p
-                h5
-                    span.label.label-info
-                        i.fa.fa-yandex-international
-                        | YEED
-                    | &nbsp;
-                    span.number #{yeed[branch_address]}
+            h5
+                span.label.label-info Reputation Score
+                | &nbsp;
+                span.number #{sacred[branch_address]}
+            h5
+                span.label.label-info
+                    i.fa.fa-yandex-international
+                    | YEED
+                | &nbsp;
+                span.number #{yeed[branch_address]}
 
         p
             h5

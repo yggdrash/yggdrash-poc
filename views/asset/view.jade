@@ -10,48 +10,10 @@ block content
                         h1 Branch Chain
                     p
                         h2= branch.name
-                            | &nbsp;Branch
+                        | &nbsp;Branch
             .row
                 .col-md-12
-                    .panel.panel-default
-                        .panel-heading
-                            h2.panel-title Branch Information
-                        .panel-body
-                            p
-                                h5
-                                    span.label.label-info
-                                        i.fa.fa-location-arrow
-                                        | &nbsp;Branch Address
-                                    | &nbsp;
-                                    span.hash= branch_address
-                            p
-                                span.label.label-info Branch Name
-                                | &nbsp;
-                                span= branch.name
-                            p
-                                span.label.label-info Branch Description
-                                | &nbsp;
-                                span= branch.meta.description
-                            if branch.type != 'immutable'
-                                p
-                                    h5
-                                        span.label.label-info Reputation Score
-                                        | &nbsp;
-                                        span.number #{sacred[branch_address]}
-                                p
-                                    h5
-                                        span.label.label-info
-                                            i.fa.fa-yandex-international
-                                            | YEED
-                                        | &nbsp;
-                                        span #{yeed[branch_address]}
-
-                            p
-                                h5
-                                    span.label.label-info Branch Type
-                                    | &nbsp;
-                                    span= branch.type
-
+                    include ../partial/branch_info
         section
             // self account information
             .row
