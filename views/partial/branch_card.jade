@@ -13,12 +13,12 @@ ul.list-group
         if branch_info["type"] == "immutable"
             span.label.label-success immutable
         if branch_info["type"] !== "immutable"
-            span.label.label-info RP
-                |  #{branch_rp}
+            span.label.label-info RP &nbsp;
+                span.number #{branch_rp}
         if branch_yeed !== undefined
             span.badge YEED &nbsp;
                 span.number #{branch_yeed}
-    li.list-group-item #{branch_info["meta"]["description"]}
+    li.list-group-item #{branch_info["name"]}
     li.list-group-item
         .hash.word-break
             a(href='/account/#{branch_info["owner"]}')
