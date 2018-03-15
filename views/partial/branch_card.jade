@@ -1,0 +1,28 @@
+- var card_type = category_type;
+- var branch_address = address;
+- var branch_info = ledger[card_type][branch_address];
+- var branch_yeed = ledger["yeed"][branch_address]
+- var branch_rp = sacred[branch_address];
+- var owner_rp = sacred[branch_info["owner"]];
+ul.list-group
+    li.list-group-item
+        a.btn.btn-defalt(href="/"+card_type+"/#{branch_address}", alt="#{branch_address}",data-toggle="tooltip", data-placement="top", title="#{branch_address}")
+            i.glyphicon.glyphicon-bitcoin
+            |  #{branch_info["meta"]["symbol"]}
+    li.list-group-item
+        if branch_info["type"] == "immutable"
+            span.label.label-success immutable
+        if branch_info["type"] !== "immutable"
+            span.label.label-info RP
+                |  #{branch_rp}
+        if branch_yeed !== undefined
+            span.badge YEED &nbsp;
+                span.number #{branch_yeed}
+    li.list-group-item #{branch_info["meta"]["description"]}
+    li.list-group-item
+        .hash.word-break
+            a(href='/account/#{branch_info["owner"]}')
+                | #{branch_info["owner"]}
+            | &nbsp;
+            span.label.label-info RP
+                |  #{owner_rp}
