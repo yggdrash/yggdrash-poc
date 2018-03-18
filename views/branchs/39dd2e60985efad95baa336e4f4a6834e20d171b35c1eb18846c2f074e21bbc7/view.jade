@@ -21,7 +21,9 @@ block content
                 .col-md-12
                     .panel.panel-default
                         .panel-heading
-                            h3.panel-title Your Account
+                            h3.panel-title
+                                i.far.fa-user-circle
+                                |  Your Account
                         .panel-body
                             p
                                 h4
@@ -127,85 +129,7 @@ block content
                                     p
                                         span#allocate-btn.btn.btn-success(data-toggle="modal",data-target="#sendApprove") approve
 
-
-        section
-            .row
-                .col-md-12
-                    .panel.panel-default
-                        .panel-heading
-                            h3.panel-title Branch History
-                        .panel-body
-                            .table-responsive
-                                table.table
-                                    tr
-                                        th
-                                            i.glyphicon.glyphicon-th
-                                            |  block address
-                                        th height
-                                        th transactions
-                                        th timestamp
-                                        th signer
-                                        th sign
-                                    tr
-                                        td.hash
-                                            i.glyphicon.glyphicon-link
-                                            |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
-                                        td
-                                            span
-                                                i.glyphicon.glyphicon-th-list
-                                                |  1234
-                                        td
-                                            span
-                                                i.glyphicon.glyphicon-list-alt
-                                                |  999
-                                        td
-                                            span
-                                                i.glyphicon.glyphicon-time
-                                                |  02/07/18 13:99:22
-                                        td.text-center
-                                            i.glyphicon.glyphicon-pencil
-                                        td.text-center
-                                            i.glyphicon.glyphicon-ok-sign
-                                    tr
-                                        td.hash
-                                            i.glyphicon.glyphicon-link
-                                            |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
-                                        td
-                                            span
-                                                i.glyphicon.glyphicon-th-list
-                                                |  1234
-                                        td
-                                            span
-                                                i.glyphicon.glyphicon-list-alt
-                                                |  999
-                                        td
-                                            span
-                                                i.glyphicon.glyphicon-time
-                                                |  02/07/18 13:99:22
-                                        td.text-center
-                                            i.glyphicon.glyphicon-pencil
-                                        td.text-center
-                                            i.glyphicon.glyphicon-ok-sign
-                                    tr
-                                        td.hash
-                                            i.glyphicon.glyphicon-link
-                                            |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
-                                        td
-                                            span
-                                                i.glyphicon.glyphicon-th-list
-                                                |  1234
-                                        td
-                                            span
-                                                i.glyphicon.glyphicon-list-alt
-                                                |  999
-                                        td
-                                            span
-                                                i.glyphicon.glyphicon-time
-                                                |  02/07/18 13:99:22
-                                        td.text-center
-                                            i.glyphicon.glyphicon-pencil
-                                        td.text-center
-                                            i.glyphicon.glyphicon-ok-sign
+        include ../../partial/history
 
         section
             .row

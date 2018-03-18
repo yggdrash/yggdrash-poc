@@ -1,12 +1,15 @@
 .panel.panel-default
     .panel-heading
-        h2.panel-title Branch Information
+        h2.panel-title
+            i.fas.fa-code-branch
+            |  Branch Information
     .panel-body
         h5
             span.label.label-info
                 i.fa.fa-location-arrow
-                | &nbsp;Network Address &nbsp;
-            span.hash= branch_address
+                |  Network Address
+            span.hash
+                |  #{branch_address}
         h5
             span.label.label-info Name
             | &nbsp;
