@@ -95,7 +95,9 @@ block content
                                             span.input-group-addon(for='transfer-data') data
                                             input#transfer-data.form-control(placeholder="0x0")
                                     p
-                                        span#transfer-btn.btn.btn-success(data-toggle="modal",data-target="#sendTransaction") Send
+                                        span#transfer-btn.btn.btn-success(data-toggle="modal",data-target="#sendTransaction")
+                                            i.glyphicon.glyphicon-modal-window
+                                            |  Send
             section#Approve.tab-pane
                 .row
                     .col-md-12
@@ -220,10 +222,12 @@ block content
                     .modal-body
                         form
                             .form-group
-                                label.label.label-info address
+                                span.label.label-info address
                                 | &nbsp;
                                 span.hash da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd
-
+                            .form-group
+                                span.label.label-info asset
+                                span.hash#sendAsset
                             .form-group
                                 label.control-label(for='transctionSign') Password:
                                 input#transctionSign.form-control(type='password')
