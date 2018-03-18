@@ -66,86 +66,97 @@ block content
                                     span.label.label-default balance
                                     | &nbsp;
                                     span 1234567.12345678
-        section
+        section#CurrencyTabs
             .row
                 .col-md-12
-                    .panel.panel-default
-                        .panel-heading
-                            h3.panel-title Transfer
-                        .panel-body
-                            form
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='transfer-to')
-                                            i.fa.fa-location-arrow
-                                            | &nbsp;To Address
-                                        input#transfer-to.form-control(placeholder="account address")
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='transfer-value') Value
-                                        input#transfer-value.form-control(placeholder="Value",min="0",data-bind="value:replyNumber")
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='transfer-data') data
-                                        input#transfer-data.form-control(placeholder="0x0")
-                                p
-                                    span#transfer-btn.btn.btn-success(data-toggle="modal",data-target="#sendTransaction") Send
+                    ul.nav.nav-tabs.nav-justified
+                        li.active(role="presentation")
+                            a(href="#Transfer") Transfer
+                        li(role="presentation")
+                            a(href="#TransferFrom") Transfer From
+                        li(role="presentation")
+                            a(href="#Approve") Approve
+        .tab-content
+            section#Transfer.tab-pane.active
+                .row
+                    .col-md-12
+                        .panel.panel-default
+                            .panel-heading
+                                h3.panel-title Transfer
+                            .panel-body
+                                form
+                                    p
+                                        .input-group
+                                            span.input-group-addon(for='transfer-to')
+                                                i.fa.fa-location-arrow
+                                                | &nbsp;To Address
+                                            input#transfer-to.form-control(placeholder="account address")
+                                    p
+                                        .input-group
+                                            span.input-group-addon(for='transfer-value') Value
+                                            input#transfer-value.form-control(placeholder="Value",min="0",data-bind="value:replyNumber")
+                                    p
+                                        .input-group
+                                            span.input-group-addon(for='transfer-data') data
+                                            input#transfer-data.form-control(placeholder="0x0")
+                                    p
+                                        span#transfer-btn.btn.btn-success(data-toggle="modal",data-target="#sendTransaction") Send
 
-        section
-            .row
-                .col-md-12
-                    .panel.panel-default
-                        .panel-heading
-                            h3.panel-title Transfer From
-                        .panel-body
-                            form
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='transfer-from')
-                                            i.fa.fa-location-arrow
-                                            | &nbsp;From Address
-                                        input#transfer-from.form-control(placeholder="account address")
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='transfer-to')
-                                            i.fa.fa-location-arrow
-                                            | &nbsp;To Address
-                                        input#transfer-from-to.form-control(placeholder="account address")
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='transfer-from-value') Value
-                                        input#transfer-from-value.form-control(placeholder="Value",min="0",data-bind="value:replyNumber")
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='transfer-from-data') data
-                                        input#transfer-from-data.form-control(placeholder="0x0")
-                                p
-                                    span#transfer-from-btn.btn.btn-success(data-toggle="modal",data-target="#sendTransaction") Send
+            section#TransferFrom.tab-pane
+                .row
+                    .col-md-12
+                        .panel.panel-default
+                            .panel-heading
+                                h3.panel-title Transfer From
+                            .panel-body
+                                form
+                                    p
+                                        .input-group
+                                            span.input-group-addon(for='transfer-from')
+                                                i.fa.fa-location-arrow
+                                                | &nbsp;From Address
+                                            input#transfer-from.form-control(placeholder="account address")
+                                    p
+                                        .input-group
+                                            span.input-group-addon(for='transfer-to')
+                                                i.fa.fa-location-arrow
+                                                | &nbsp;To Address
+                                            input#transfer-from-to.form-control(placeholder="account address")
+                                    p
+                                        .input-group
+                                            span.input-group-addon(for='transfer-from-value') Value
+                                            input#transfer-from-value.form-control(placeholder="Value",min="0",data-bind="value:replyNumber")
+                                    p
+                                        .input-group
+                                            span.input-group-addon(for='transfer-from-data') data
+                                            input#transfer-from-data.form-control(placeholder="0x0")
+                                    p
+                                        span#transfer-from-btn.btn.btn-success(data-toggle="modal",data-target="#sendTransaction") Send
 
-        section
-            .row
-                .col-md-12
-                    .panel.panel-default
-                        .panel-heading
-                            h3.panel-title Approve
-                        .panel-body
-                            form
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='approve-account')
-                                            i.fa.fa-location-arrow
-                                            | &nbsp;To Address
-                                        input#allocate-account.form-control(placeholder="account address")
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='approve-value') Value
-                                        input#allocate-value.form-control(placeholder="Value",min="0",data-bind="value:replyNumber")
-                                p
-                                    .input-group
-                                        span.input-group-addon(for='approve-data') data
-                                        input#allocate-data.form-control(placeholder="0x0")
-                                p
-                                    span#allocate-btn.btn.btn-success(data-toggle="modal",data-target="#sendApprove") approve
+            section#Approve.tab-pane
+                .row
+                    .col-md-12
+                        .panel.panel-default
+                            .panel-heading
+                                h3.panel-title Approve
+                            .panel-body
+                                form
+                                    p
+                                        .input-group
+                                            span.input-group-addon(for='approve-account')
+                                                i.fa.fa-location-arrow
+                                                | &nbsp;To Address
+                                            input#allocate-account.form-control(placeholder="account address")
+                                    p
+                                        .input-group
+                                            span.input-group-addon(for='approve-value') Value
+                                            input#allocate-value.form-control(placeholder="Value",min="0",data-bind="value:replyNumber")
+                                    p
+                                        .input-group
+                                            span.input-group-addon(for='approve-data') data
+                                            input#allocate-data.form-control(placeholder="0x0")
+                                    p
+                                        span#allocate-btn.btn.btn-success(data-toggle="modal",data-target="#sendApprove") approve
 
 
         section
@@ -276,4 +287,8 @@ block footscript
                 $('#sendTransaction').modal('hide');
                 }
             );
+            $('#CurrencyTabs a').click(function (e) {
+                e.preventDefault()
+                $(this).tab('show')
+            })
         });
