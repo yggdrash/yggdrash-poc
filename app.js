@@ -12,6 +12,7 @@ var currency = require('./routes/currency');
 var exchange = require('./routes/exchange');
 var asset = require('./routes/asset');
 var services = require('./routes/services');
+var api = require('./routes/api');
 
 var app = express();
 
@@ -35,6 +36,7 @@ app.use('/currency', currency);
 app.use('/exchange', exchange);
 app.use('/asset', asset);
 app.use('/services', services);
+app.use('/api', api);
 
 
 // catch 404 and forward to error handler
