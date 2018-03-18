@@ -23,9 +23,9 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "qrcode.js": "qrcode-js#*",
-    "font-awesome": "font-awsome#^4.6.3",
+    "font-awesome": "font-awsome#^5",
     "html5.qrcode": "*",
     "awesome-bootstrap-checkbox": "^0.3.7",
-    "bootstrap-select": "^1.12.4",
+    "bootstrap-select": "^1.12.4"
   }
 }
