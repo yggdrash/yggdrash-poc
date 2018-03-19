@@ -126,8 +126,40 @@ block content
                                             input#allocate-data.form-control(placeholder="0x0")
                                     p
                                         span#allocate-btn.btn.btn-success(data-toggle="modal",data-target="#sendApprove")
-                                        i.glyphicon.glyphicon-modal-window
-                                        |  approve
+                                            i.glyphicon.glyphicon-modal-window
+                                            |  approve
+
+        section
+            .row
+                .col-md-12
+                    .panel.panel-default
+                        .panel-heading
+                            h3.panel-title Read Blockchain
+                        .panel-body
+                            .allowance
+                                form
+                                    p
+                                        .input-group
+                                            span.input-group-addon(for='allowance')
+                                                i.fa.fa-location-arrow
+                                                | &nbsp;Allowance address
+                                            input#allowance.form-control(placeholder="account address")
+                                    p
+                                        span.btn.btn-default
+                                            i.glyphicon.glyphicon-modal-window
+                                            |  read allowance
+                            .balanceOf
+                                form
+                                    p
+                                        .input-group
+                                            span.input-group-addon(for='balanceOf')
+                                                i.fa.fa-location-arrow
+                                                | &nbsp;balance check address
+                                            input#balanceOf.form-control(placeholder="account address")
+                                    p
+                                        span.btn.btn-default
+                                            i.glyphicon.glyphicon-modal-window
+                                            |  read balance
 
 
         include ../partial/history
