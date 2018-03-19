@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const crypto = require('crypto');
 
-var leger = require('../model/stemchain.json');
+var ledger = require('../model/stemchain.json');
 var yeed = require('../model/yeedchain.json');
 var sacred = require('../model/sacredwaterchain.json');
 
@@ -22,8 +22,11 @@ router.get('/:id', function (req, res, next) {
     console.log('ok');
     var target = null;
     var target_id = req.param('id');
-    if(leger["currency"][req.param('id')] != undefined)
-        target = leger["currency"][req.param('id')];
+    if(ledger["currency"][target_id] != undefined){
+        target = ledger["currency"][target_id];
+        yeed = ledger["yeed"][target_id];
+    }
+
     console.log(target);
     res.render('currency/view',
         {
