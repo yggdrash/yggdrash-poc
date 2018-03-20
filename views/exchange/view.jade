@@ -2,8 +2,8 @@ extends ../layout
 
 block content
     // branch information
-    - var from_branch = leger["currency"][branch["meta"]["from"]];
-    - var to_branch = leger["currency"][branch["meta"]["to"]];
+    - var from_branch = ledger["currency"][branch["meta"]["from"]];
+    - var to_branch = ledger["currency"][branch["meta"]["to"]];
     .container
         section
             .row
@@ -16,6 +16,34 @@ block content
             .row
                 .col-md-12
                     include ../partial/branch_info
+            .row
+                .col-md-12
+                    .panel.panel-primary
+                        .panel-heading
+                            h3.panel-title
+                                i.far.fa-user-circle
+                                |  #{branch.name} Branch Account
+                        .panel-body
+                            p
+                                h4
+                                    span.label.label-default
+                                        i.fas.fa-location-arrow
+                                        |  #{to_branch["name"]} Branch address
+                                    | &nbsp;
+                                    a(href='/currency/#{branch["meta"]["to"]}')
+                                        span.hash #{branch["meta"]["to"]}
+                            p
+                                h4
+                                    span.label.label-default
+                                        i.far.fa-user-circle
+                                        |  Branch Account
+                                    | &nbsp;
+                                    span.hash #{branch_address}
+                            p
+                                h4
+                                    span.label.label-default balance
+                                    | &nbsp;
+                                    span.number #{yeed[branch_address]}
 
         section
             // self account information
@@ -47,6 +75,8 @@ block content
                                     span.label.label-default balance
                                     | &nbsp;
                                     span 1234567.12345678
+
+
         section
             .row
                 .col-md-12
