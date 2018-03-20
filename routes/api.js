@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const crypto = require('crypto');
+var fs = require('fs');
 
 router.get('/', function(req, res, next){
     res.send({
@@ -28,6 +29,17 @@ router.get('/transaction/:hash/', function(req, res, next) {
     res.send('respond with a resource');
 });
 
+router.get('/branch/:hash',function(req, res, next){
+    // GET BRANCH DATA
+    var hash = req.param('hash');
+    if(fs.existsSync("model/branchs/"+hash+".json")) {
+        var branchs = require("../model/branchs/" + hash + ".json");
+        res.send({result:branchs});
+    }else{
+        res.send({result:0});
+    }
+
+});
 
 
 module.exports = router;
