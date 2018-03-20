@@ -3,7 +3,7 @@ var router = express.Router();
 const crypto = require('crypto');
 
 var ledger = require('../model/stemchain.json');
-var yeed = require('../model/yeedchain.json');
+var yeed_ledger = require('../model/yeedchain.json');
 var sacred = require('../model/sacredwaterchain.json');
 
     /* GET home page. */
@@ -29,6 +29,7 @@ router.get('/:id', function (req, res, next) {
     }
 
     var branch_data = require("../model/branchs/"+target_id+".json");
+    var resolver = yeed_ledger[target[""]]
 
     console.log(branch_data);
     res.render('exchange/view',

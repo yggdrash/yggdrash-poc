@@ -6,6 +6,5 @@
   "type":"exchange",
   "description": "ETH TO YEED",
   "ratio":0.1,
-  "reserve":998764,
   "reserve_address":"0x1F8f8A219550f89f9D372ab2eE0D1f023EC665a3"
 }
