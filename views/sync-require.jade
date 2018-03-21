@@ -7,6 +7,15 @@ block content
         h1 Branch is Sync Required
     .row
       .col-md-12
+        -
+          var patialBranch = {
+          "title":"",
+          "address":branch_address,
+          "description":branch["meta"]["description"],
+          "name":branch["name"],
+          "type":branch["type"],
+          "yeed":branch["yeed"],
+          }
         include partial/branch_info
       .col-md-12.text-center
         a.btn.btn-danger(href="/") Back to Stem
