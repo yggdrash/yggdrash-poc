@@ -1,9 +1,9 @@
-- console.log(branch["yeed"]);
+- var patialBranch = patialBranch ? patialBranch : {};
 .panel.panel-info
     .panel-heading
         h2.panel-title
             i.fas.fa-code-branch
-            |  Branch Information
+            |  #{patialBranch.title} Branch Information
     .panel-body
         table.table.table-bordered
             tr
@@ -11,36 +11,36 @@
                     i.fa.fa-location-arrow
                     |  Network Address
                 td
-                    span.hash  #{branch_address}
+                    span.hash  #{patialBranch.address}
             tr
                 th.info
                     i.fas.fa-tag
                     |  Name
                 td
-                    span=  branch.name
+                    span  #{patialBranch.name}
             tr
                 th.info
                     i.far.fa-sticky-note
                     |  Description
                 td
-                    span=  branch.meta.description
-            if branch.type != 'immutable'
+                    span  #{patialBranch.description}
+            if patialBranch.type != 'immutable'
                 tr
                     th.info
                         i.far.fa-star
                         |  Reputation Score
                     td
-                        span.number #{sacred[branch_address]}
+                        span.number #{sacred[patialBranch.address]}
                 tr
                     th.info
                         i.fas.fa-cubes
                         |  YEED
                     td
-                        span.number #{yeed}
+                        span.number #{yeed[patialBranch.address]}
             tr
                 th.info
                     i.fas.fa-archive
                     |  Type
                 td
-                    span=  branch.type
+                    span  #{patialBranch.type}
 

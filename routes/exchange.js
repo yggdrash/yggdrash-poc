@@ -5,7 +5,6 @@ const crypto = require('crypto');
 var ledger = require('../model/stemchain.json');
 var yeed_ledger = require('../model/yeedchain.json');
 var sacred = require('../model/sacredwaterchain.json');
-
     /* GET home page. */
 router.get('/', function(req, res, next) {
 
@@ -29,7 +28,6 @@ router.get('/:id', function (req, res, next) {
     }
 
     var branch_data = require("../model/branchs/"+target_id+".json");
-    var resolver = yeed_ledger[target[""]]
 
     console.log(branch_data);
     res.render('exchange/view',
@@ -38,7 +36,7 @@ router.get('/:id', function (req, res, next) {
             branch: target,
             branch_address:target_id,
             ledger:ledger,
-            yeed: yeed,
+            yeed: yeed_ledger,
             sacred: sacred,
             branch_data: branch_data
         }

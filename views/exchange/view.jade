@@ -1,9 +1,19 @@
 extends ../layout
-
+-
+    var branch_name = "";
+    var patialBranch = {};
 block content
     // branch information
-    - var from_branch = ledger["currency"][branch["meta"]["from"]];
-    - var to_branch = ledger["currency"][branch["meta"]["to"]];
+    -
+        var from_branch = ledger["currency"][branch["meta"]["from"]];
+        var to_branch = ledger["currency"][branch["meta"]["to"]];
+        patialBranch = {
+            "title":"",
+            "address":branch_address,
+            "description":branch["meta"]["description"],
+            "name":branch["name"],
+            "type":branch["type"]
+        }
     .container
         section
             .row
@@ -16,34 +26,32 @@ block content
             .row
                 .col-md-12
                     include ../partial/branch_info
+
+        section#exchange-from-branch
+            -
+                patialBranch = {
+                    "title":"From ",
+                    "address":branch["meta"]["from"],
+                    "description":from_branch["meta"]["description"],
+                    "name":from_branch["name"],
+                    "type":from_branch["type"]
+                }
             .row
                 .col-md-12
-                    .panel.panel-primary
-                        .panel-heading
-                            h3.panel-title
-                                i.far.fa-user-circle
-                                |  #{branch.name} Branch Account
-                        .panel-body
-                            p
-                                h4
-                                    span.label.label-default
-                                        i.fas.fa-location-arrow
-                                        |  #{to_branch["name"]} Branch address
-                                    | &nbsp;
-                                    a(href='/currency/#{branch["meta"]["to"]}')
-                                        span.hash #{branch["meta"]["to"]}
-                            p
-                                h4
-                                    span.label.label-default
-                                        i.far.fa-user-circle
-                                        |  Branch Account
-                                    | &nbsp;
-                                    span.hash #{branch_address}
-                            p
-                                h4
-                                    span.label.label-default balance
-                                    | &nbsp;
-                                    span.number #{yeed[branch_address]}
+                    include ../partial/branch_info
+
+        section#exchange-to-branch
+            -
+                patialBranch = {
+                    "title":"To ",
+                    "address":branch["meta"]["to"],
+                    "description":to_branch["meta"]["description"],
+                    "name":to_branch["name"],
+                    "type":to_branch["type"]
+                }
+            .row
+                .col-md-12
+                    include ../partial/branch_info
 
         section
             // self account information
@@ -69,12 +77,12 @@ block content
                                         i.far.fa-user-circle
                                         |  Your Account
                                     | &nbsp;
-                                    span.hash d04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
+                                    span.hash 0X75E2C5175E2E618F48E70343B14C31B280E42D90
                             p
                                 h4
                                     span.label.label-default balance
                                     | &nbsp;
-                                    span 1234567.12345678
+                                    span#accountBalance 1234567.12345678
 
 
         section
@@ -84,6 +92,7 @@ block content
                         .panel-heading
                             h3.panel-title Exchange Ratio
                         .panel-body
+                            input(type="hidden",name="branch_address",value='#{branch["meta"]["to"]}')
                             p
                                 span.label.label-info from
                                 | &nbsp;
@@ -120,11 +129,11 @@ block content
                             p
                                 span.label.label-info reserve address
                                 | &nbsp;
-                                span #{branch_data["reserve_address"]}
+                                span.resolver-address #{branch_data["reserve_address"]}
                             p
                                 span.label.label-info reserved amount
                                 | &nbsp;
-                                span.number #{branch_data["reserve"]}
+                                span.resolver.number #{branch_data["reserve"]}
 
         section
             .row
@@ -199,4 +208,11 @@ block footscript
                 $('#sendTransaction').modal('hide');
                 }
             );
+            axios.get('/api/branch/#{branch["meta"]["from"]}').then(function (res) {
+                $("#accountBalance").text(res.data.result["0X75E2C5175E2E618F48E70343B14C31B280E42D90"]).digits();
+            });
+            axios.get('/api/branch/#{branch["meta"]["to"]}').then(function (res) {
+                var resolverAmount = res.data.result['#{branch_data["reserve_address"]}'];
+                $("span.resolver").text(resolverAmount).digits();
+            })
         });
