@@ -3,7 +3,6 @@ var router = express.Router();
 const crypto = require('crypto');
 
 var ledger = require('../model/stemchain.json');
-var yeed = require('../model/yeedchain.json');
 var sacred = require('../model/sacredwaterchain.json');
 
 
@@ -24,16 +23,14 @@ router.get('/:id', function (req, res, next) {
     var target_id = req.param('id');
     if(ledger["asset"][target_id] != undefined){
         target = ledger["asset"][target_id];
-        yeed = ledger["yeed"][target_id];
+        target["yeed"] = ledger["yeed"][target_id];
     }
-
     if(fs.existsSync("views/branchs/"+target_id)){
         res.render("branchs/"+target_id+"/view",
             {
                 title: 'Yggdrash Browser',
                 branch: target,
                 branch_address:target_id,
-                yeed: yeed,
                 sacred: sacred
             }
         );
@@ -44,7 +41,6 @@ router.get('/:id', function (req, res, next) {
                 title: 'Yggdrash Browser',
                 branch: target,
                 branch_address:target_id,
-                yeed: yeed,
                 sacred: sacred
             }
         );

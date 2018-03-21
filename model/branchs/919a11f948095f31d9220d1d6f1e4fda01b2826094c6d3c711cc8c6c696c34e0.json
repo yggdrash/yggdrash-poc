@@ -1,0 +1,269 @@
+{
+  "address": "919a11f948095f31d9220d1d6f1e4fda01b2826094c6d3c711cc8c6c696c34e0",
+  "yeed": {
+    "b4f2332cc5bc34bc569389733d1d80d2238ec91001ad3ae8b77750baf7005f85":999,
+    "da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd":100,
+    "d7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5":267,
+    "1cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131":99999,
+    "c7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5":102,
+    "g7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5":108,
+    "2cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131":99,
+    "h7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5":102,
+    "34b003be7227bdb4921b1327782e28a9b94f2c8983a433009f3ccf2545a9317f":88899,
+    "b4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8":4225,
+    "0031875f77c4d0f01fca039534750dd85329c081ec05e70df0e0e9d64d14648d":1922,
+    "39dd2e60985efad95baa336e4f4a6834e20d171b35c1eb18846c2f074e21bbc7":99700,
+    "5226954feafeae18181de39d33b5d20b5f78e1ee112684bf04445903bf4db562":64534,
+    "f21dea74d898cfeaf836ecc99ad0331bade09711ff927365e91ada2ff4cb5caf":98782,
+    "0d62646ad2a4c5ed523519b8d4d8c11b4de2405ff7f85a65a3d5976e6bacd8fe":4312,
+    "5f3360fbda697ca7f699633088f4bce3c344574450978c3c430d15a6d3cc7e91":8231,
+    "c23af781c82e4df0eb35da1ed15ca403683192912877d2b2f2cbb7d80a5fa68f":9972233,
+    "bfb125a42beb4e53ea10ed412ccf2ec45d8c31bc5603cae19c4fede8e8830a1b":6231,
+    "bbf2d10831921eb2138c5c32daded22c6d5867b946e9ce84b4e42224e487cbdc":99876477
+  },
+  "exchange" : {
+    "b4f2332cc5bc34bc569389733d1d80d2238ec91001ad3ae8b77750baf7005f85":{
+      "name": "YEED TO Ethereum",
+      "owner": "0x1F8f8A219550f89f9D372ab2eE0D1f023EC665a3",
+      "meta":{
+        "from":"83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156",
+        "to":"f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8",
+        "symbol":"YEED TO ETH",
+        "type":"exchange",
+        "description": "Yggdrash YEED to ethereum network"
+      },
+      "type":"immutable",
+      "createdat": 100
+    },
+    "bbf2d10831921eb2138c5c32daded22c6d5867b946e9ce84b4e42224e487cbdc":{
+      "name": "Ethereum TO YEED",
+      "owner": "0x1F8f8A219550f89f9D372ab2eE0D1f023EC665a3",
+      "meta":{
+        "from":"f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8",
+        "to":"83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156",
+        "symbol":"ETH TO YEED",
+        "type":"exchange",
+        "description": "ETH TO YEED"
+      },
+      "type":"immutable",
+      "createdat": 100
+    },
+    "34b003be7227bdb4921b1327782e28a9b94f2c8983a433009f3ccf2545a9317f":{
+      "name": "BTC TO ETH",
+      "owner": "0x75E2C5175E2E618F48E70343B14C31B280E42D90",
+      "meta":{
+        "from":"da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd",
+        "to":"f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8",
+        "symbol":"BTC TO ETH",
+        "type":"exchange",
+        "description": "BTC exchange ETH"
+      },
+      "type":"standard",
+      "createdat": 100
+    },
+    "0031875f77c4d0f01fca039534750dd85329c081ec05e70df0e0e9d64d14648d":{
+      "name": "KRW TO USD",
+      "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+      "meta":{
+        "from":"c7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5",
+        "to":"g7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5",
+        "symbol":"KRW TO USD",
+        "type":"exchange",
+        "description": "KRW exchange USD"
+      },
+      "type":"standard",
+      "createdat": 100
+    }
+
+  },
+  "asset": {
+    "39dd2e60985efad95baa336e4f4a6834e20d171b35c1eb18846c2f074e21bbc7": {
+      "name": "Ai autonomous vehicles",
+      "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+      "meta":{
+        "symbol":"AIAV",
+        "type":"asset",
+        "description": "Ai autonomous vehicles certificate",
+        "currency":["83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156"]
+      },
+      "type":"standard",
+      "createdat": 100
+    },
+    "5226954feafeae18181de39d33b5d20b5f78e1ee112684bf04445903bf4db562": {
+      "name": "Real Estate",
+      "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+      "meta":{
+        "symbol":"BRE",
+        "type":"asset",
+        "description": "Real Estate",
+        "currency":["83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156"]
+      },
+      "type":"standard",
+      "createdat": 100
+    },
+    "f21dea74d898cfeaf836ecc99ad0331bade09711ff927365e91ada2ff4cb5caf": {
+      "name": "bond",
+      "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+      "meta":{
+        "symbol":"BBOND",
+        "type":"asset",
+        "description": "Yggdrash YEED",
+        "currency":["83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156"]
+      },
+      "type":"standard",
+      "createdat": 100
+    },
+    "bfb125a42beb4e53ea10ed412ccf2ec45d8c31bc5603cae19c4fede8e8830a1b": {
+      "name": "gift certificate",
+      "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+      "meta":{
+        "symbol":"BGC",
+        "type":"asset",
+        "description": "a certificate that can be purchased, as from a store, for presentation as a gift: it entitles the recipient to select merchandise in the amount indicated",
+        "currency":["83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156"]
+      },
+      "type":"standard",
+      "createdat": 100
+    }
+  },
+  "services": {
+    "0d62646ad2a4c5ed523519b8d4d8c11b4de2405ff7f85a65a3d5976e6bacd8fe": {
+      "name": "chatting",
+      "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+      "meta":{
+        "symbol":"CHAT",
+        "type":"services",
+        "description": "chatting for people in blockchain"
+      },
+      "type":"immutable",
+      "createdat": 100
+    },
+    "5f3360fbda697ca7f699633088f4bce3c344574450978c3c430d15a6d3cc7e91": {
+      "name": "Donations",
+      "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+      "meta":{
+        "symbol":"BDFP",
+        "type":"services",
+        "description": "Donations for people"
+      },
+      "type":"standard",
+      "createdat": 100
+    },
+    "c23af781c82e4df0eb35da1ed15ca403683192912877d2b2f2cbb7d80a5fa68f": {
+      "name": "Decentralized Bank",
+      "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+      "meta":{
+        "symbol":"BGC",
+        "type":"services",
+        "description": "Decentralized Bank - loan and save asset",
+        "branchs": [
+
+        ]
+      },
+      "type":"standard",
+      "createdat": 100
+    },
+    "bfb125a42beb4e53ea10ed412ccf2ec45d8c31bc5603cae19c4fede8e8830a1b": {
+      "name": "gift certificate",
+      "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+      "meta":{
+        "symbol":"BGC",
+        "type":"services",
+        "description": "gift certificate"
+      },
+      "type":"standard",
+      "createdat": 100
+    }
+  },
+  "currency" : {
+    "83d2834d74afcba266fb3305bd2ff4a3cf35fe9c455e288975ea39b68e255156": {
+      "name": "YEED",
+      "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+      "meta":{
+        "symbol":"YEED",
+        "type":"currency",
+        "description": "Yggdrash YEED"
+      },
+      "type":"immutable",
+      "createdat": 100
+    },
+    "f4a3760644d064b3f7d82bb8e43ccb090a2dac8b55cc2894bf618c551b0bc2a8": {
+      "name": "ethereum",
+      "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+      "meta":{
+        "type":"currency",
+        "symbol":"ETH",
+        "description": "Yggdrash ETH"
+      },
+      "type":"immutable",
+      "createdat": 100
+    },
+    "da8562e7abc01a6f0d49a25d144ce6a9d7752a079c5d950ad5a93fd6d623f7fd": {
+      "name": "ybitcoin",
+      "owner": "0X75E2C5175E2E618F48E70343B14C31B280E42D90",
+      "meta":{
+        "symbol":"BTC",
+        "type":"currency",
+        "description": "yggdrash bitcoin"
+      },
+      "type":"standard",
+      "createdat": 100
+    },
+    "d7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5": {
+      "name": "ybitcoingold",
+      "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+      "meta":{
+        "type":"currency",
+        "symbol":"BTG",
+        "description": "yggdrash bitcoin gold"
+      },
+      "type":"standard",
+      "createdat": 1015
+    },
+    "1cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131": {
+      "name": "yethereumclassic",
+      "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+      "meta":{
+        "type":"currency",
+        "symbol":"ETC",
+        "description": "yEthereum Classic"
+      },
+      "type":"standard",
+      "createdat": 3101
+    },
+    "c7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5": {
+      "name": "KOREA WON",
+      "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+      "meta":{
+        "type":"currency",
+        "symbol":"KRW",
+        "description": "KOREA WON BY ANYBANK"
+      },
+      "type":"standard",
+      "createdat": 41401
+    },
+    "g7abc869526cf7f2d70622bdc0eedc496cec64d3bf9d53f5a0eb5a253f7b7db5": {
+      "name": "Us Dollar",
+      "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+      "meta":{
+        "type":"currency",
+        "symbol":"USD",
+        "description": "US Dollar BY THEBANK"
+      },
+      "type":"standard",
+      "createdat": 90101
+    },
+    "2cb0c4c80152b0c0b7a5ef8762c5338ef28ce26c8a9cad1d70847a39fface131": {
+      "name": "China, Yuan Renminbi",
+      "owner": "0X961586E538C0F3657475B590374958401384AA0B",
+      "meta":{
+        "type":"currency",
+        "symbol":"CNY",
+        "description": "China, Yuan Renminbi BY TTBANK"
+      },
+      "type":"standard",
+      "createdat": 987101
+    }
+  }
+}
+

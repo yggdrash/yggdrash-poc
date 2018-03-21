@@ -13,6 +13,15 @@ block content
                             | &nbsp;Branch
             .row
                 .col-md-12
+                    -
+                        var patialBranch = {
+                            "title":"",
+                            "address":branch_address,
+                            "description":branch["meta"]["description"],
+                            "name":branch["name"],
+                            "type":branch["type"],
+                            "yeed":branch["yeed"],
+                        }
                     include ../../partial/branch_info
 
         section

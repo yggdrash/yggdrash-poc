@@ -24,7 +24,7 @@ router.get('/:id', function (req, res, next) {
     var target_id = req.params['id'];
     if(ledger["exchange"][target_id] != undefined){
         target = ledger["exchange"][target_id];
-        yeed = ledger["yeed"][target_id];
+        target["yeed"] = ledger["yeed"][target_id];
     }
 
     var branch_data = require("../model/branchs/"+target_id+".json");

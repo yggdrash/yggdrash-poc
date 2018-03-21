@@ -23,7 +23,9 @@ router.get('/:id', function (req, res, next) {
     var target_id = req.param('id');
     if(ledger["currency"][target_id] != undefined){
         target = ledger["currency"][target_id];
+        target["yeed"] = ledger["yeed"][target_id];
     }
+    console.log(target);
 
     res.render('currency/view',
         {
