@@ -19,6 +19,23 @@ script.
             })
         }
         $('.number').digits();
+        $(".block-history").each(function(){
+            var block_history = $(this);
+            var block_template = block_history.find(".block-template.hide")
+            axios.get('/api/blocks/').then(function (res) {
+                for(var i=0;i<100;i++){
+                    var obj =  res.data.result.result[i];
+                    var template = block_template.clone();
+                    template.removeClass("hide");
+                    template.find(".blockhash").text(obj.blockHash);
+                    template.find(".transactions-size").text(obj.size)
+                    template.find(".block-time").text(obj.timeStamp);
+                    block_history.append(template);
+                }
+            }).then(function(){
+                $(".transactions-size").digits();
+            });
+        });
     });
 
 

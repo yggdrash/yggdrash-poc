@@ -14,7 +14,12 @@ router.get('/', function(req, res, next){
 /* GET users listing. */
 router.get('/blocks/', function(req, res, next) {
     // all block
-    res.send('respond with a resource');
+    if(fs.existsSync("blockchains/blocks.json")) {
+        var blocks = require("../blockchains/blocks.json");
+        res.send({result:blocks});
+    }else{
+        res.send({result:0});
+    }
 });
 
 router.get('/block/:address/:blockhash', function(req, res, next) {

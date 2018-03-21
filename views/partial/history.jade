@@ -6,73 +6,31 @@ section
                     h3.panel-title Branch History
                 .panel-body
                     .table-responsive
-                        table.table
+                        table.table.block-history
                             tr
                                 th
                                     i.glyphicon.glyphicon-th
                                     |  block hash
-                                th height
                                 th transactions
                                 th timestamp
                                 th signer
                                 th sign
-                            tr
-                                td.hash
+                            tr.block-template.hide
+                                td
                                     i.glyphicon.glyphicon-link
-                                    |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
+                                    | &nbsp;
+                                    span.hash.blockhash
                                 td
                                     span
                                         i.glyphicon.glyphicon-th-list
-                                        span.number 1234
-                                td
-                                    span
-                                        i.glyphicon.glyphicon-list-alt
-                                        span.number  999
+                                        | &nbsp;
+                                        span.number.transactions-size
                                 td
                                     span
                                         i.glyphicon.glyphicon-time
-                                        |  02/07/18 13:99:22
-                                td.text-center
+                                        | &nbsp;
+                                        span.block-time
+                                td.text-center.signer(data-toggle="popover",data-content="")
                                     i.fas.fa-user-plus
-                                td.text-center
-                                    i.fas.fa-check
-                            tr
-                                td.hash
-                                    i.glyphicon.glyphicon-link
-                                    |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
-                                td
-                                    span
-                                        i.glyphicon.glyphicon-th-list
-                                        |  1234
-                                td
-                                    span
-                                        i.glyphicon.glyphicon-list-alt
-                                        |  999
-                                td
-                                    span
-                                        i.glyphicon.glyphicon-time
-                                        |  02/07/18 13:99:22
-                                td.text-center
-                                    i.fas.fa-user-plus
-                                td.text-center
-                                    i.fas.fa-check
-                            tr
-                                td.hash
-                                    i.glyphicon.glyphicon-link
-                                    |  04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
-                                td
-                                    span
-                                        i.glyphicon.glyphicon-th-list
-                                        |  1234
-                                td
-                                    span
-                                        i.glyphicon.glyphicon-list-alt
-                                        |  999
-                                td
-                                    span
-                                        i.glyphicon.glyphicon-time
-                                        |  02/07/18 13:99:22
-                                td.text-center
-                                    i.fas.fa-user-plus
-                                td.text-center
+                                td.text-center.signture(data-toggle="popover",data-content="")
                                     i.fas.fa-check
